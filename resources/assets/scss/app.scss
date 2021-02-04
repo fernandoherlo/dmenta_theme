@@ -17,7 +17,10 @@ $font-family-sans-serif: 'Lato', sans-serif;
         background: $white !important;
     }
     .navbar-brand {
-        background-image: url(/dist/image/dmenta.svg);
+        width: 14rem;
+        outline: 0;
+        text-indent: -4000px;
+        background: url(../img/dmenta.svg) 0 0 no-repeat;
     }
 }
 
