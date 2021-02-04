@@ -10,9 +10,16 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header">
-		<?php the_title( '<h1><strong>', '</strong></h1>' ); ?>
-	</header><!-- .entry-header -->
+
+	<?php
+	if ( ! is_home() ) :
+    	?>
+		<header class="entry-header">
+			<?php the_title( '<h1><strong>', '</strong></h1>' ); ?>
+		</header>
+		<?php
+    endif;
+    ?>
 
 	<?php dmenta_theme_post_thumbnail(); ?>
 
