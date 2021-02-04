@@ -1,12 +1,26 @@
-$primary: #3CE2AD;
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
+// Varaibles
+$primary: #3CE2AD;
+$warning: #FFEB64;
+$font-family-sans-serif: 'Lato', sans-serif;
+
+// Bootrstrap
 @import "~bootstrap/scss/bootstrap";
+
+// Css
+a {
+    color: $body-color;
+    text-decoration: none;
+    border-bottom: 0.3rem solid $warning;
+}
 
 .navbar {
     padding-top: 4rem;
     padding-bottom: 4rem;
     &.bg-light {
-        background: $white;
+        background: $white !important;
     }
 }
 
