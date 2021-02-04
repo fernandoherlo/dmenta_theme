@@ -10,9 +10,15 @@
 ?>
 
 <section class="no-results not-found">
-	<header class="page-header">
-		<h1><strong><?php esc_html_e( 'Nothing Found', 'dmenta_theme' ); ?></strong></h1>
-	</header><!-- .page-header -->
+	<?php
+	if ( ! is_front_page() ) :
+    	?>
+		<header class="page-header">
+			<h1><strong><?php esc_html_e( 'Nothing Found', 'dmenta_theme' ); ?></strong></h1>
+		</header>
+		<?php
+    endif;
+    ?>
 
 	<div class="page-content">
 		<?php
