@@ -133,6 +133,21 @@ if ( ! function_exists( 'dmenta_theme_setup' ) ) :
             )
         );
 
+        add_theme_support( 'post-formats', 
+            array( 
+                'aside', 
+                'gallery',
+                'link',
+                'image',
+                'quote',
+                'status',
+                'video',
+                'audio',
+                'chat'
+            ) 
+        );
+        add_post_type_support( 'post', 'post-formats' );
+
         // Add theme support for selective refresh for widgets.
         add_theme_support( 'customize-selective-refresh-widgets' );
     }
