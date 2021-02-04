@@ -37,9 +37,17 @@ main {
         margin-bottom: 3rem;
     }
 
-    .post {
+    .post.hentry {
         padding: 2rem 2rem 4rem;
         border-left: 1px solid $gray-400;
+        header {
+            &:after {
+                content: "•";
+                position: absolute;
+                top: 0;
+                left: -2rem;
+            }
+        }
     }
 }
 
