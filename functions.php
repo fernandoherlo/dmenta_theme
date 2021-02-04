@@ -78,8 +78,8 @@ add_action( 'after_setup_theme', 'dmenta_theme_setup' );
 function dmenta_theme_scripts() {
     $theme = wp_get_theme();
     
-    wp_enqueue_style( $theme->get('TextDomain') . '-app' , get_template_directory_uri() . '/public/css/app.css' , array() , $theme->get('Version') , 'all' );
-    wp_enqueue_script( $theme->get('TextDomain') . '-app' , get_template_directory_uri() . '/public/js/app.js' , array() , $theme->get('Version') , true );
+    wp_enqueue_style( $theme->get('TextDomain') . '-app' , get_template_directory_uri() . '/dist/css/app.css' , array() , $theme->get('Version') , 'all' );
+    wp_enqueue_script( $theme->get('TextDomain') . '-app' , get_template_directory_uri() . '/dist/js/app.js' , array() , $theme->get('Version') , true );
 
     if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
         wp_enqueue_script( 'comment-reply' );
