@@ -28,7 +28,9 @@ get_header();
                             <h1><strong><?php single_post_title(); ?></strong></h1>
                             <?php
                             if ( metadata_exists( 'post', get_the_ID(), 'subtitle' ) ) {
-                                $meta_value = get_post_meta( get_the_ID(), 'subtitle', true );
+                            ?>
+                                <h2 class="fs-3"><?php echo get_post_meta($post->ID, 'mykey', true); ?></h2>
+                            <?php
                             }
                             ?>
                         </header>
