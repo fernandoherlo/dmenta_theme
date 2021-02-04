@@ -12,8 +12,7 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
 	<?php
-	var_dump(is_front_page());
-	if ( ! is_home() ) :
+	if ( ! is_front_page() ) :
     	?>
 		<header class="entry-header">
 			<?php the_title( '<h1><strong>', '</strong></h1>' ); ?>
