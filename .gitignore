@@ -22,8 +22,8 @@ node_modules/
 *.sql
 *.sqlite
 
-# env
-.env
-.env.local
-.env.dev
-.env.pro
+# dmenta
+.DS_Store
+/node_modules
+/package-lock.json
+/mix-manifest.json

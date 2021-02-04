@@ -1,0 +1,48 @@
+{
+	"folders":
+	[
+		{
+			"file_exclude_patterns":
+			[
+				"._.*",
+				"._*",
+				".git",
+				".browserslistrc",
+				".postcssrc.js",
+				"babel.config.js",
+				"package-lock.json"
+			],
+            "folder_exclude_patterns":
+            [
+            	"node_modules"
+            ],
+			"name": "DMENTA THEME",
+			"path": "."
+		}
+	],
+	"settings":
+	{
+		"todoreview":
+		{
+			"exclude_files":
+			[
+				"*.sublime-workspace",
+				"*.sublime-project"
+			],
+			"exclude_folders":
+			[
+				"*.git*",
+				"*node_modules*",
+				"*bootstrap-material-design*",
+				"*dist*"
+			],
+			"patterns":
+			{
+				"CHANGED": "CHANGED[\\s]*?:[\\s]*(?P<changed>.*)$",
+				"FIXME": "FIX ?ME[\\s]*?:[\\s]*(?P<fixme>.*)$",
+				"NOTE": "NOTE[\\s]*?:[\\s]*(?P<note>.*)$",
+				"TODO": "TODO[\\s]*?:[\\s]*(?P<todo>.*)$"
+			}
+		}
+	}
+}

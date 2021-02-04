@@ -1,0 +1,28 @@
+{
+  "name": "dmenta_theme",
+  "version": "1.0.0",
+  "description": "DMENTA theme for wordpress",
+  "main": "index.js",
+  "keywords": [],
+  "author": {
+    "name": "Fernando Hernáez",
+    "email": "info@dmenta.io",
+    "url": "https://dmenta.io"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fernandoherlo/dmenta_theme"
+  },
+  "license": "MIT",
+  "scripts": {
+    "dev": "NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "watch": "NODE_ENV=development node_modules/webpack/bin/webpack.js --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "production": "NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "laravel-mix": "^4.0.14",
+    "sass": "^1.16.1",
+    "sass-loader": "^7.1.0"
+  }
+}
