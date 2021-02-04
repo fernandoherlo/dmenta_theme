@@ -11,7 +11,7 @@
 
 ?>
 
-    <footer class="container">
+    <footer class="container site-footer">
         <div class="row">
             <div class="col-12">
                 <small>© <?php echo date('Y');?> <?php bloginfo( 'name' ); ?>. All rights reserved.</small>
