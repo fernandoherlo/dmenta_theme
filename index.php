@@ -25,6 +25,7 @@ get_header();
                     if ( is_home() && ! is_front_page() ) :
                         ?>
                         <header>
+                            sd
                             <h1><strong><?php single_post_title(); ?></strong></h1>
                             <?php
                             if ( metadata_exists( 'post', get_the_ID(), 'subtitle' ) ) {
