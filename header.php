@@ -27,10 +27,10 @@
 <div id="app">
 
     <header class="site-header">
-        <div class="site-branding">
-            <p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-        </div>
         <nav class="navbar navbar-expand-md">
+
+            <a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
+
             <div class="container-fluid">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#primary-menu" aria-controls="primary-menu" aria-expanded="false" aria-label="<?php esc_html_e( 'Primary Menu', 'dmenta_theme' ); ?>">
                   <span class="navbar-toggler-icon"></span>
