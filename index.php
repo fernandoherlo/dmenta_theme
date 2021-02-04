@@ -25,16 +25,11 @@ get_header();
                     if ( is_home() && ! is_front_page() ) :
                         ?>
                         <header>
-                            <?php the_meta(); ?>
-                            <?php echo get_post_meta(get_option('page_for_posts'), 'subtitle', true); ?>
-                            <?php echo get_post_meta(get_option('page_for_posts'), 'subtitle', true); ?>
-                            <?php echo $post->ID; ?>
-                            <?php echo get_the_ID(); ?>
                             <h1><strong><?php single_post_title(); ?></strong></h1>
                             <?php
-                            if ( metadata_exists( 'post', get_the_ID(), 'subtitle' ) ) {
+                            if ( metadata_exists( 'post', get_option('page_for_posts'), 'subtitle' ) ) {
                             ?>
-                                <h2 class="fs-3"><?php echo get_post_meta($post->ID, 'mykey', true); ?></h2>
+                                <h2 class="fs-3"><?php echo get_post_meta(get_option('page_for_posts'), 'subtitle', true); ?></h2>
                             <?php
                             }
                             ?>
