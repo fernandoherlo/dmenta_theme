@@ -11,10 +11,12 @@
 
 ?>
 
-    <footer class="container-fluid no-padding site-footer">
-        <div class="row">
-            <div class="col-12">
-                <small>© <?php echo date('Y');?> <?php bloginfo( 'name' ); ?>. All rights reserved.</small>
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <small>© <?php echo date('Y');?> <?php bloginfo( 'name' ); ?>. All rights reserved.</small>
+                </div>
             </div>
         </div>
     </footer>
