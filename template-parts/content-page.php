@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package efg3443g
+ * @package dmenta_theme
  */
 
 ?>
@@ -14,7 +14,7 @@
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 	</header><!-- .entry-header -->
 
-	<?php efg3443g_post_thumbnail(); ?>
+	<?php dmenta_theme_post_thumbnail(); ?>
 
 	<div class="entry-content">
 		<?php
@@ -22,7 +22,7 @@
 
 		wp_link_pages(
 			array(
-				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'efg3443g' ),
+				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'dmenta_theme' ),
 				'after'  => '</div>',
 			)
 		);
@@ -36,7 +36,7 @@
 				sprintf(
 					wp_kses(
 						/* translators: %s: Name of current post. Only visible to screen readers */
-						__( 'Edit <span class="screen-reader-text">%s</span>', 'efg3443g' ),
+						__( 'Edit <span class="screen-reader-text">%s</span>', 'dmenta_theme' ),
 						array(
 							'span' => array(
 								'class' => array(),
