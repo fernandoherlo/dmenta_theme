@@ -11,7 +11,7 @@
 
 <section class="no-results not-found">
 	<?php
-	if ( ! is_front_page() ) :
+	if ( ! is_home() ) :
     	?>
 		<header class="page-header">
 			<h1><strong><?php esc_html_e( 'Nothing Found', 'dmenta_theme' ); ?></strong></h1>
