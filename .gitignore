@@ -5,6 +5,7 @@ node_modules/
 *.log
 *.sql
 *.sqlite
+*.sublime-project
 
 # dmenta
 .DS_Store
