@@ -26,15 +26,15 @@
 
 <div id="app">
 
-    <header class="site-header">
-        <nav class="navbar navbar-expand-md">
+    <nav class="navbar navbar-expand-md">
+        <div class="container-fluid">
 
             <a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
 
-            <div class="container-fluid">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#primary-menu" aria-controls="primary-menu" aria-expanded="false" aria-label="<?php esc_html_e( 'Primary Menu', 'dmenta_theme' ); ?>">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#primary-menu" aria-controls="primary-menu" aria-expanded="false" aria-label="<?php esc_html_e( 'Primary Menu', 'dmenta_theme' ); ?>">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
             <?php
             wp_nav_menu(
                 array(
@@ -46,5 +46,5 @@
                 )
             );
             ?>
-        </nav>
-    </header>
+        </div>
+    </nav>
