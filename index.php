@@ -1,22 +1,53 @@
 <!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<html>
+    <?php wp_head(); ?>
 
-    <head>
+  </head>
 
-        <?php wp_head(); ?>
+  <body <?php body_class(); ?>>
 
-    </head>
+    <main id="primary" class="site-main">
 
-    <body <?php body_class(); ?>>
+      <?php
+      if ( have_posts() ) :
 
-    	<?php
-        /* <img src="<?php echo get_template_directory_uri(); ?>/public/img/someimage.png" a;t="" />
-        */
-        ?>
+        if ( is_home() && ! is_front_page() ) :
+          ?>
+          <header>
+            <h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
+          </header>
+          <?php
+        endif;
 
-        <?php wp_footer(); ?>
+        /* Start the Loop */
+        while ( have_posts() ) :
+          the_post();
 
-    </body>
+          /*
+           * Include the Post-Type-specific template for the content.
+           * If you want to override this in a child theme, then include a file
+           * called content-___.php (where ___ is the Post Type name) and that will be used instead.
+           */
+          get_template_part( 'template-parts/content', get_post_type() );
 
+        endwhile;
+
+        the_posts_navigation();
+
+      else :
+
+        get_template_part( 'template-parts/content', 'none' );
+
+      endif;
+      ?>
+
+    </main><!-- #main -->
+
+    <?php wp_footer(); ?>
+
+  </body>
 </html>
