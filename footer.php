@@ -11,9 +11,11 @@
 
 ?>
 
-    <footer class="site-footer">
-        <div class="site-info">
-            © <?php echo date('Y');?> <?php bloginfo( 'name' ); ?>. All rights reserved.
+    <footer class="container">
+        <div class="row">
+            <div class="col-12">
+                © <?php echo date('Y');?> <?php bloginfo( 'name' ); ?>. All rights reserved.
+            </div>
         </div>
     </footer>
 </div><!-- #page -->
