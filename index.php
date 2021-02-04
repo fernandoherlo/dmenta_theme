@@ -22,7 +22,7 @@ get_header();
                 <?php
                 if ( have_posts() ) :
 
-                    if ( is_home() && ! is_front_page() ) :
+                    if ( ! is_home() ) :
                         ?>
                         <header>
                             <h1><strong><?php single_post_title(); ?></strong></h1>
