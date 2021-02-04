@@ -12,6 +12,7 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
 	<?php
+	var_dump(is_home());
 	if ( ! is_home() ) :
     	?>
 		<header class="entry-header">
