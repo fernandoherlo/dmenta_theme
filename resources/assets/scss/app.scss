@@ -41,7 +41,8 @@ main {
         padding: 2rem 2rem 4rem;
         border-left: 1px solid $gray-400;
         header {
-            &:after {
+            position: relative;
+            &:before {
                 content: "•";
                 position: absolute;
                 top: 0;
