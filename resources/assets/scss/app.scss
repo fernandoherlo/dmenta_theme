@@ -10,12 +10,6 @@ $font-family-sans-serif: 'Lato', sans-serif;
 @import "~bootstrap/scss/bootstrap";
 
 // Css
-a {
-    color: $body-color;
-    text-decoration: none;
-    border-bottom: 0.3rem solid $warning;
-}
-
 .navbar {
     padding-top: 4rem;
     padding-bottom: 4rem;
@@ -30,6 +24,7 @@ main {
 
 
 aside {
+    color: $white;
     padding-top: 4rem;
     padding-bottom: 16rem;
     background: $primary;
@@ -39,4 +34,17 @@ footer.site-footer {
     padding-top: 4rem;
     padding-bottom: 4rem;
     background: $primary;
+    small {
+        font-style: italic;
+        text-align: right;
+    }
+}
+
+main,
+aside {
+    a {
+        color: $body-color;
+        text-decoration: none;
+        border-bottom: 0.3rem solid $warning;
+    }
 }

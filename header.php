@@ -41,7 +41,7 @@
                     'theme_location' => 'menu-1',
                     'menu_id'        => 'primary-menu',
                     'menu_class'     => 'navbar-nav mr-auto',
-                    'container_class'=> 'collapse navbar-collapse',
+                    'container_class'=> 'collapse navbar-collapse justify-content-end',
                     'container_id'   => 'primary-menu',
                     'bootstrap'      => true
                 )
