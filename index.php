@@ -26,8 +26,8 @@ get_header();
                         ?>
                         <header>
                             <?php the_meta(); ?>
-                            <?php echo get_post_meta(get_the_ID(), 'subtitle', true); ?>
-                            <?php echo get_post_meta($post->ID, 'subtitle', true); ?>
+                            <?php echo get_post_meta(get_option('page_for_posts'), 'subtitle', true); ?>
+                            <?php echo get_post_meta(get_option('page_for_posts'), 'subtitle', true); ?>
                             <?php echo $post->ID; ?>
                             <?php echo get_the_ID(); ?>
                             <h1><strong><?php single_post_title(); ?></strong></h1>
