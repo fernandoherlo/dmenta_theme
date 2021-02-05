@@ -55,8 +55,8 @@ main {
                 font-size: 1.5rem;
             }
         }
-
-        .format-status {
+        // Status
+        &.format-status {
             padding-left: 1.8rem;
             header {
                 &:before {
