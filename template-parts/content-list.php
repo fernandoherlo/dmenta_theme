@@ -14,7 +14,11 @@
     <header class="entry-header">
         <?php
         
-        the_title( '<h3 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h3>' );
+        if ( 'status' === get_post_type() ) :
+            the_title( '<h3 class="entry-title">', '</h3>' );
+        else:
+            the_title( '<h3 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h3>' );
+         endif;
 
         if ( 'post' === get_post_type() ) :
             ?>
