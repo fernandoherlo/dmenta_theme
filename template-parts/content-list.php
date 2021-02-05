@@ -18,7 +18,7 @@
             the_title( '<h3 class="entry-title">', '</h3>' );
         elseif ( 'link' === get_post_format() ) :
         ?>
-            <h3 class="entry-title"><a href="<?php esc_url( get_permalink( get_post_meta(get_the_ID(), 'link', true) ) ); ?>" rel="bookmark"><?php echo esc_html( get_the_title( get_post_meta(get_the_ID(), 'link', true) ) ); ?></a></h3>
+            <h3 class="entry-title"><a href="<?php echo esc_url( get_permalink( get_post_meta(get_the_ID(), 'link', true) ) ); ?>" rel="bookmark"><?php echo esc_html( get_the_title( get_post_meta(get_the_ID(), 'link', true) ) ); ?></a></h3>
         <?php
         else:
             the_title( '<h3 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h3>' );
