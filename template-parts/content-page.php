@@ -12,7 +12,7 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
 	<?php
-	if ( ! is_front_page() ) :
+	if ( ! is_front_page() AND !get_post_meta(get_the_ID(), 'noh1', true) ) :
     	?>
 		<header class="entry-header">
 			<?php the_title( '<h1><strong>', '</strong></h1>' ); ?>
