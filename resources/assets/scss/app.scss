@@ -61,6 +61,12 @@ main {
         }
         .entry-date {
             position: absolute;
+            top: 0.5rem;
+            left: -6.5rem;
+            text-align: right;
+            font-style: italic;
+            font-size: 0.9rem;
+            color: $gray-600;
         }
         // Status
         &.format-status {
