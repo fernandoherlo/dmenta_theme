@@ -17,7 +17,7 @@
         if ( 'status' === get_post_format() ) :
             the_title( '<h3 class="entry-title">', '</h3>' );
         elseif ( 'link' === get_post_format() ) :
-            the_title( '<h3 class="entry-title"><a href="' . esc_url( get_permalink( get_post_meta(the_ID(), 'link', true) ) ) . '" rel="bookmark">', '</a></h3>' );
+            the_title( '<h3 class="entry-title"><a href="' . esc_url( get_permalink( get_post_meta(get_the_ID(), 'link', true) ) ) . '" rel="bookmark">', '</a></h3>' );
         else:
             the_title( '<h3 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h3>' );
         endif;
