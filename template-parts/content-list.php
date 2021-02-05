@@ -28,10 +28,13 @@
         ?>
             <div class="entry-meta">
                 <?php
-
-                var_dump($GLOBALS["date_year"]);
-
-                dmenta_theme_posted_on();
+                if( is_home() ):
+                    if ( AND $GLOBALS["date_year"] != get_the_date( 'Y' ) )
+                        dmenta_theme_posted_on();
+                    endif;
+                else:
+                    dmenta_theme_posted_on();
+                endif;
 
                 $GLOBALS["date_year"] = get_the_date( 'Y' );
                 ?>
