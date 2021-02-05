@@ -38,13 +38,18 @@
         <?php
         the_excerpt();
         ?>
-        
+
         <?php
+        
+        if ( 'standard' === get_post_format() OR 'aside' === get_post_format() ) :
+
             $categories = get_the_category();
 
-            if ( ! empty( $categories ) ) {
+            if ( ! empty( $categories ) ) :
                 echo esc_html__('More about') . ' ' . esc_html( strtolower($categories[0]->name) );   
-            }
+            endif;
+
+        endif;
         ?>
     </div>
 
