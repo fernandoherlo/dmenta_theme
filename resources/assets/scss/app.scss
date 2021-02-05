@@ -3,6 +3,7 @@
 
 // Variables
 $primary: #3CE2AD;
+$secondary: #6945ED;
 $warning: #FFEB64;
 $body-color: #3F404D;
 
@@ -71,6 +72,20 @@ main {
                     font-weight: normal;
                     font-style: italic;
                     font-size: 1rem;
+                }
+            }
+        }
+
+        // Link LAB
+        &.format-link {
+            header {
+                &:before {
+                    color: $secondary;
+                }
+                h3 {
+                    a {
+                        border-color: $secondary;
+                    }
                 }
             }
         }
