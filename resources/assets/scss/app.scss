@@ -55,6 +55,9 @@ main {
                 left: -3.5rem;
                 font-size: 1.5rem;
             }
+            h3 {
+                font-weight: bold;
+            }
         }
         // Status
         &.format-status {
@@ -97,7 +100,7 @@ main {
         &.format-aside {
             header {
                 h3 {
-                    font-size: 2.2rem;
+                    font-size: 2rem;
                 }
             }
             .more {
