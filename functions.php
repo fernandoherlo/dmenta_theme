@@ -190,6 +190,16 @@ function dmenta_theme_scripts() {
 add_action( 'wp_enqueue_scripts', 'dmenta_theme_scripts' );
 
 /**
+ * Title category
+ */
+add_filter( 'get_the_archive_title', function ($title) {
+    if ( is_category() ) {
+        $title = single_cat_title( '', false );
+    }
+    return $title;
+});
+
+/**
  * Custom template tags for this theme.
  */
 require get_template_directory() . '/inc/template-tags.php';
