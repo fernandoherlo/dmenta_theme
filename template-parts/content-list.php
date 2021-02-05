@@ -30,6 +30,15 @@
                 <?php
                 dmenta_theme_posted_on();
                 ?>
+                See more 
+                <?php
+                    $categories_list = get_the_category_list( esc_html__( ', ', 'dmenta_theme' ) );
+                    if ( $categories_list ) {
+                        var_dump($categories_list);
+                        /* translators: 1: list of categories. */
+                        printf( '<span class="cat-links">' . esc_html__( '%1$s', 'dmenta_theme' ) . '</span>', $categories_list ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+                    }
+                ?>
             </div>
         <?php endif; ?>
     </header>
