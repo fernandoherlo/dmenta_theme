@@ -13,8 +13,6 @@
 
     <header class="entry-header">
         <?php
-            $categories = get_the_category(get_the_ID());
-            var_dump($categories);
         
         if ( !is_home() ) :
             the_title( '<h3 class="entry-title">', '</h3>' );
@@ -22,7 +20,7 @@
             the_title( '<h3 class="entry-title">', '</h3>' );
         elseif ( 'link' === get_post_format() ) :
         ?>
-            <h3 class="entry-title"><a href="<?php echo esc_url( get_category_link( $categories[0]->term_id ) ); ?>" rel="bookmark"><?php echo esc_html( get_the_title( get_post_meta(get_the_ID(), 'link', true) ) ); ?></a></h3>
+            <h3 class="entry-title"><a href="<?php echo esc_url( get_category_link( get_post_meta(get_the_ID(), 'link', true) ) ); ?>" rel="bookmark"><?php echo esc_html( get_the_title( get_post_meta(get_the_ID(), 'link', true) ) ); ?></a></h3>
         <?php
         else:
             the_title( '<h3 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h3>' );
