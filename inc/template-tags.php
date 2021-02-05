@@ -17,10 +17,16 @@ if ( ! function_exists( 'dmenta_theme_posted_on' ) ) :
 		// 	$time_string = '<time class="entry-date published" datetime="%1$s">%2$s</time><time class="updated" datetime="%3$s">%4$s</time>';
 		// }
 
+		$format = get_option( 'date_format' );
+
+		if ( is_front_page() ) :
+			$format = 'Y';
+		endif;
+
 		$time_string = sprintf(
 			$time_string,
 			esc_attr( get_the_date( DATE_W3C ) ),
-			esc_html( get_the_date() ) //,
+			esc_html( get_the_date( $format ) ) //,
 			// esc_attr( get_the_modified_date( DATE_W3C ) ),
 			// esc_html( get_the_modified_date() )
 		);
