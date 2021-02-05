@@ -40,10 +40,7 @@
         ?>
 
         <?php
-
-        var_dump(get_post_format());
-        
-        if ( 'standard' === get_post_format() OR 'aside' === get_post_format() ) :
+        if ( false === get_post_format() OR 'aside' === get_post_format() ) :
             $categories = get_the_category();
             if ( ! empty( $categories ) ) :
             ?>
