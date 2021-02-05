@@ -75,6 +75,15 @@ main {
             font-size: 1.15rem;
             color: $gray-600;
         }
+    }
+}
+
+.blog {
+    .post {
+        .entry-date {
+            top: .74rem;
+        }
+        
         // Status
         &.format-status {
             padding-top: 1rem;
@@ -128,14 +137,6 @@ main {
                 border: 0;
                 color: $primary;
             }
-        }
-    }
-}
-
-.blog {
-    .post {
-        .entry-date {
-            top: .74rem;
         }
     }
 }
