@@ -95,6 +95,11 @@ main {
         // Normal
         &.format-standard,
         &.format-aside {
+            header {
+                h3 {
+                    font-size: 2.2rem;
+                }
+            }
             .more {
                 border: 0;
                 color: $primary;
