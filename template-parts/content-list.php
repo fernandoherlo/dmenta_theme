@@ -14,7 +14,7 @@
     <header class="entry-header">
         <?php
             $categories = get_the_category(get_the_ID());
-            var_dump($categories[0]);
+            var_dump($categories);
         
         if ( !is_home() ) :
             the_title( '<h3 class="entry-title">', '</h3>' );
