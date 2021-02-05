@@ -153,10 +153,6 @@ footer.site-footer {
     small {
         font-style: italic;
     }
-    .category-9 &,
-    .page-id-23 & {
-        background: $secondary;
-    }
 }
 
 main,
@@ -165,5 +161,14 @@ aside {
         color: $body-color;
         text-decoration: none;
         border-bottom: 0.3rem solid $warning;
+    }
+}
+
+
+.category-9,
+.page-id-23 {
+    footer.site-footer,
+    aside {
+        background: $secondary;
     }
 }
