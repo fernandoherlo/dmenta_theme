@@ -91,6 +91,15 @@ main {
                 }
             }
         }
+
+        // Normal
+        &.format-standard,
+        &.format-aside {
+            .more {
+                border: 0;
+                color: $primary;
+            }
+        }
     }
 }
 
