@@ -14,7 +14,9 @@
     <header class="entry-header">
         <?php
         
-        if ( 'status' === get_post_format() ) :
+        if ( !is_home() ) :
+            the_title( '<h3 class="entry-title">', '</h3>' );
+        elseif ( 'status' === get_post_format() ) :
             the_title( '<h3 class="entry-title">', '</h3>' );
         elseif ( 'link' === get_post_format() ) :
         ?>
