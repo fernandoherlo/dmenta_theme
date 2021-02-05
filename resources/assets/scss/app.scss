@@ -70,9 +70,6 @@ main {
             width: 3rem;
             line-height: 1.1;
             text-transform: uppercase;
-            .blog & {
-                top: .7rem;
-            } 
         }
         .entry-content {
             font-size: 1.15rem;
@@ -126,6 +123,13 @@ main {
                 border: 0;
                 color: $primary;
             }
+        }
+    }
+}
+.blog {
+    .post {
+        .entry-date {
+            top: .7rem;
         }
     }
 }
