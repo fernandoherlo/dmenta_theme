@@ -71,6 +71,10 @@ main {
             line-height: 1.1;
             text-transform: uppercase;
         }
+        .entry-content {
+            font-size: 1.2rem;
+            color: $gray-700;
+        }
         // Status
         &.format-status {
             padding-top: 1rem;
