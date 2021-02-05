@@ -171,6 +171,11 @@ aside {
     a {
         color: $white !important;
     }
+    .social-icons {
+        .fab {
+            font-size: 3rem;
+        }
+    }
 }
 
 footer.site-footer {
