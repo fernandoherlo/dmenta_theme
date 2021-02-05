@@ -84,6 +84,14 @@ main {
             top: .74rem;
         }
 
+        .post-thumbnail {    
+            display: block;
+            width: 8rem;
+            height: auto;
+            float: left;
+            margin-right: 2rem;
+        }
+
         // Status
         &.format-status {
             padding-top: 1rem;
