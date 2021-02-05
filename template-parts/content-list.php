@@ -40,15 +40,16 @@
         ?>
 
         <?php
+
+        var_dump(get_post_format());
         
         if ( 'standard' === get_post_format() OR 'aside' === get_post_format() ) :
-
             $categories = get_the_category();
-
             if ( ! empty( $categories ) ) :
-                echo esc_html__('More about') . ' ' . esc_html( strtolower($categories[0]->name) );   
+            ?>
+                <a href="<?php echo esc_url( get_permalink() ); ?>" rel="bookmark"><?php echo esc_html__('More about') . ' ' . esc_html( strtolower($categories[0]->name) ); ?></a>
+            <?php
             endif;
-
         endif;
         ?>
     </div>
