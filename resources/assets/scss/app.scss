@@ -59,6 +59,9 @@ main {
                 font-weight: bold;
             }
         }
+        .entry-date {
+            position: absolute;
+        }
         // Status
         &.format-status {
             padding-top: 1rem;
