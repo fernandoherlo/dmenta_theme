@@ -60,9 +60,9 @@ main {
             padding-left: 1.8rem;
             header {
                 &:before {
+                    color: $gray-500;
+                    content: "○";
                     left: -2.3rem;
-                    color: transparent;
-                    border: 2px solid $gray-500;
                 }
                 h3 {
                     font-weight: normal;
