@@ -19,10 +19,7 @@ if ( ! function_exists( 'dmenta_theme_posted_on' ) ) :
 
 		$format = get_option( 'date_format' );
 
-		var_dump(is_front_page());
-		var_dump(is_home());
-
-		if ( is_front_page() ) :
+		if ( is_home() ) :
 			$format = 'Y';
 		endif;
 
