@@ -19,6 +19,8 @@
         elseif ( 'status' === get_post_format() ) :
             the_title( '<h3 class="entry-title">', '</h3>' );
         elseif ( 'link' === get_post_format() ) :
+            $categories = get_the_category();
+            var_dump($categories[0]);
         ?>
             <h3 class="entry-title"><a href="<?php echo esc_url( get_permalink( get_post_meta(get_the_ID(), 'link', true) ) ); ?>" rel="bookmark"><?php echo esc_html( get_the_title( get_post_meta(get_the_ID(), 'link', true) ) ); ?></a></h3>
         <?php
