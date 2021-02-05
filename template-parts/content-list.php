@@ -44,7 +44,11 @@
 
     <div class="entry-content">
         <?php
-        the_excerpt();
+        if( is_home() ):
+            the_excerpt();
+        else:
+            the_content();
+        endif;
         ?>
 
         <?php
