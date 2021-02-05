@@ -83,7 +83,7 @@ main {
         .entry-date {
             top: .74rem;
         }
-        
+
         // Status
         &.format-status {
             padding-top: 1rem;
@@ -150,6 +150,11 @@ main {
             h3 {
                 font-size: 1.5rem;
                 padding-top: 0.2rem;
+            }
+        }
+        .entry-content {
+            .wp-block-columns {
+                margin-bottom: 0;
             }
         }
     }
