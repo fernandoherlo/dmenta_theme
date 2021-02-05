@@ -25,7 +25,8 @@ $font-family-sans-serif: 'Lato', sans-serif;
         text-indent: -4000px;
         background: url(../img/dmenta.svg) 0 0 no-repeat;
     }
-    .nav-item.current-menu-item {
+    .nav-item.current-menu-item,
+    .nav-item.current_page_parent {
         a {
             font-weight: bold;
         }
