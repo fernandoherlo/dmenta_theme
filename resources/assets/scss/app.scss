@@ -1,7 +1,7 @@
 // Fonts
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
-// Varaibles
+// Variables
 $primary: #3CE2AD;
 $warning: #FFEB64;
 $body-color: #3F404D;
@@ -36,8 +36,12 @@ main {
     h2.fs-3 {
         margin-bottom: 3rem;
     }
+}
 
-    .post.hentry {
+
+.blog,
+.archive {
+    .post {
         padding: 2rem 2rem 4rem;
         border-left: 1px solid $gray-400;
         header {
