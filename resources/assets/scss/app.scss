@@ -42,7 +42,7 @@ main {
 .blog,
 .archive {
     .post {
-        padding: 2rem 2rem 4rem;
+        padding: 2rem 2rem 4rem 3rem;
         border-left: 1px solid $gray-400;
         header {
             position: relative;
@@ -51,18 +51,20 @@ main {
                 content: "•";
                 position: absolute;
                 top: 0;
-                left: -2.5rem;
+                left: -3.5rem;
                 font-size: 1.5rem;
             }
         }
         // Status
         &.format-status {
             padding-left: 1.8rem;
+            color: $gray-600;
             header {
                 &:before {
-                    color: $gray-500;
+                    color: $gray-600;
                     content: "○";
-                    left: -2.3rem;
+                    top: -0.5rem;
+                    left: -2.25rem;
                 }
                 h3 {
                     font-weight: normal;
