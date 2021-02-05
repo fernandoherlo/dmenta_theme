@@ -28,7 +28,12 @@
         ?>
             <div class="entry-meta">
                 <?php
+
+                var_dump($date_year);
+
                 dmenta_theme_posted_on();
+
+                $date_year = get_the_date( 'Y' );
                 ?>
             </div>
         <?php endif; ?>
