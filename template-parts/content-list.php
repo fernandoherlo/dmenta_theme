@@ -18,16 +18,19 @@
             the_title( '<h3 class="entry-title">', '</h3>' );
         else:
             the_title( '<h3 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h3>' );
-         endif;
+        endif;
 
         if ( 'post' === get_post_type() ) :
+            if ( 'status' === get_post_format() ) :
+            else:
             ?>
-            <div class="entry-meta">
-                <?php
-                dmenta_theme_posted_on();
-                dmenta_theme_posted_by();
-                ?>
-            </div>
+                <div class="entry-meta">
+                    <?php
+                    dmenta_theme_posted_on();
+                    dmenta_theme_posted_by();
+                    ?>
+                </div>
+            <?php endif; ?>
         <?php endif; ?>
     </header>
 
