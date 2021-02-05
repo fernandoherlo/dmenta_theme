@@ -29,7 +29,7 @@
             <div class="entry-meta">
                 <?php
                 if( is_home() ):
-                    if ( AND $GLOBALS["date_year"] != get_the_date( 'Y' ) )
+                    if ( $GLOBALS["date_year"] != get_the_date( 'Y' ) )
                         dmenta_theme_posted_on();
                     endif;
                 else:
