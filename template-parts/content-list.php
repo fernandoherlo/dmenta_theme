@@ -22,6 +22,13 @@
 
         if ( 'post' === get_post_type() ) :
             if ( 'status' === get_post_format() ) :
+            ?>
+                <div class="entry-meta">
+                    <?php
+                    dmenta_theme_posted_on();
+                    ?>
+                </div>
+            <?php
             else:
             ?>
                 <div class="entry-meta">
