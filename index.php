@@ -29,7 +29,7 @@ get_header();
                             <?php
                             if ( metadata_exists( 'post', get_option('page_for_posts'), 'subtitle' ) ) {
                             ?>
-                                <h2 class="fs-3"><?php echo get_post_meta(get_option('page_for_posts'), 'subtitle', true); ?></h2>
+                                <h2 class="fs-3 w-75"><?php echo get_post_meta(get_option('page_for_posts'), 'subtitle', true); ?></h2>
                             <?php
                             }
                             ?>

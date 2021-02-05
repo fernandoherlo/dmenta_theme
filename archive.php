@@ -19,7 +19,7 @@ get_header();
                     <header class="page-header">
                         <?php
                         the_archive_title( '<h1><strong>', '</strong></h1>' );
-                        the_archive_description( '<h2 class="fs-3">', '</h2>' );
+                        the_archive_description( '<h2 class="fs-3 w-75">', '</h2>' );
                         ?>
                     </header><!-- .page-header -->
 
