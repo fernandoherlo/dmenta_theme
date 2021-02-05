@@ -30,12 +30,11 @@
                 <?php
                 dmenta_theme_posted_on();
                 ?>
-                
                 <?php
                     $categories = get_the_category();
  
                     if ( ! empty( $categories ) ) {
-                        echo esc_html__('More about') . esc_html( strtolower($categories[0]->name) );   
+                        echo esc_html__('More about') . ' ' . esc_html( strtolower($categories[0]->name) );   
                     }
                 ?>
             </div>
