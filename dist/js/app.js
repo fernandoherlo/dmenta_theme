@@ -3006,7 +3006,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
   setTimeout(function () {
     document.querySelector('body').classList.add('loaded');
-  }, 300);
+  }, 300); // Links event
+
+  document.links.onclick = clicklink;
 });
 
 function wrap(selector, newHTML, cssClass) {
@@ -3015,6 +3017,22 @@ function wrap(selector, newHTML, cssClass) {
     var new_html = newHTML + '<span class="wrap ' + cssClass + '">' + org_html + '</span>';
     element.innerHTML = new_html;
   });
+}
+
+function clicklink() {
+  var _this = this;
+
+  if (this.host == window.location.host) {
+    // Not loaded
+    document.querySelector('body').classList.remove('loaded'); // Go
+
+    setTimeout(function () {
+      window.location.href = _this.href;
+    }, 300);
+    return false;
+  } else {
+    return true;
+  }
 }
 
 /***/ }),
