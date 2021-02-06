@@ -27,7 +27,7 @@
 
 <div class="overlay-loading">
     <span>
-        <img src="<?php echo get_template_directory_uri(); ?>/public/img/loading.png" alt="<?php echo esc_html__( 'Loading', 'dmenta_theme' ); ?>">
+        <img src="<?php echo get_template_directory_uri(); ?>/dist/img/loading.gif" alt="<?php echo esc_html__( 'Loading', 'dmenta_theme' ); ?>">
     </span>
 </div>
 
