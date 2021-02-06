@@ -300,11 +300,15 @@ aside {
         font-style: italic;
         color: $warning;
         position: absolute;
-        top:  calc(50% - 50px);
-        left: calc(50% - 50px);
+        top:  calc(50% - 20px);
+        left: calc(50% - 20px);
         text-align: center;
-        width: 100px;
-        height: 100px;
+        width: 40px;
+        height: 40px;
+        img {
+            width: 100%;
+            height: auto;
+        }
     }
 
     .loaded & {

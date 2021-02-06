@@ -10978,11 +10978,15 @@ aside a:not(.post-thumbnail):hover .bkg {
   font-style: italic;
   color: #FFEB64;
   position: absolute;
-  top: calc(50% - 50px);
-  left: calc(50% - 50px);
+  top: calc(50% - 20px);
+  left: calc(50% - 20px);
   text-align: center;
-  width: 100px;
-  height: 100px;
+  width: 40px;
+  height: 40px;
+}
+.overlay-loading span img {
+  width: 100%;
+  height: auto;
 }
 .loaded .overlay-loading {
   top: 105%;
