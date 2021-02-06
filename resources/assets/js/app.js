@@ -14,11 +14,10 @@ document.addEventListener("DOMContentLoaded", function() {
             if (element.host == window.location.host) {
                 
                 // Not loaded
-                document.querySelector('body').classList.add('load');
                 document.querySelector('body').classList.remove('loaded');
 
                 // Go
-                setTimeout(() => { window.location.href = element.href }, 300);
+                setTimeout(() => { window.location.href = element.href }, 400);
 
                 return false;
             } else {
