@@ -272,3 +272,21 @@ aside {
         background: $secondary;
     }
 }
+
+
+.overlay-loading {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    background: $primary;
+    span {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        text-align: center;
+    }
+}

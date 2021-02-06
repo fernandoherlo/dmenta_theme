@@ -24,5 +24,8 @@
 
 <?php wp_footer(); ?>
 
+
+<div class="overlay-loading"><span><?php echo esc_html__( 'Loading', 'dmenta_theme' ); ?></span></div>
+
 </body>
 </html>
