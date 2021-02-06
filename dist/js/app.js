@@ -3017,7 +3017,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         setTimeout(function () {
           window.location.href = element.href;
-        }, 3200);
+        }, 500);
         return false;
       } else {
         return true;
