@@ -294,6 +294,7 @@ aside {
     width: 100%;
     background: $primary;
     transition: all 0.2s ease-in-out 0.1s;
+    transition: background 0.1s linear;
 
     span {
         font-size: 0.7rem;
