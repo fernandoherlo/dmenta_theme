@@ -3006,7 +3006,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   setTimeout(function () {
     document.querySelector('body').classList.add('loaded');
-  }, 100); // Links event
+  }, 300); // Links event
 
   document.querySelectorAll('#app a').forEach(function (element) {
     element.addEventListener('click', function (event) {
