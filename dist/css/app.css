@@ -10911,16 +10911,17 @@ footer.site-footer small, footer.site-footer .small {
   font-style: italic;
 }
 
-main a,
-aside a {
+main a:not(.post-thumbnail),
+aside a:not(.post-thumbnail) {
   display: inline-block;
   position: relative;
   color: #3F404D;
   text-decoration: none;
   border-bottom: 0.3rem solid #FFEB64;
+  transition: all 0.1s ease-in-out 0.05s;
 }
-main a .bkg,
-aside a .bkg {
+main a:not(.post-thumbnail) .bkg,
+aside a:not(.post-thumbnail) .bkg {
   position: absolute;
   top: 0;
   left: 0;
@@ -10930,16 +10931,16 @@ aside a .bkg {
   background: #FFEB64;
   transition: all 0.1s ease-in-out 0.05s;
 }
-main a .wrap.link,
-aside a .wrap.link {
+main a:not(.post-thumbnail) .wrap.link,
+aside a:not(.post-thumbnail) .wrap.link {
   position: relative;
 }
-main a:hover,
-aside a:hover {
+main a:not(.post-thumbnail):hover,
+aside a:not(.post-thumbnail):hover {
   color: #3F404D !important;
 }
-main a:hover .bkg,
-aside a:hover .bkg {
+main a:not(.post-thumbnail):hover .bkg,
+aside a:not(.post-thumbnail):hover .bkg {
   width: 100%;
 }
 

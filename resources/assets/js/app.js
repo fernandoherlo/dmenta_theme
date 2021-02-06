@@ -3,7 +3,7 @@ import 'bootstrap';
 document.addEventListener("DOMContentLoaded", function() {
     console.log('asd');
 
-    wrap('main a, aside a', '<span class="bkg"></span>', 'link');
+    wrap('main a:not(.post-thumbnail), aside a', '<span class="bkg"></span>', 'link');
 });
 
 

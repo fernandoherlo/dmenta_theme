@@ -233,12 +233,13 @@ footer.site-footer {
 
 main,
 aside {
-    a {
+    a:not(.post-thumbnail) {
         display: inline-block;
         position: relative;
         color: $body-color;
         text-decoration: none;
         border-bottom: 0.3rem solid $warning;
+        transition: all 0.1s ease-in-out 0.05s;
         .bkg {
             position: absolute;
             top: 0;
