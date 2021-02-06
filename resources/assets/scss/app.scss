@@ -298,7 +298,7 @@ aside {
         font-size: 0.7rem;
         font-style: italic;
         color: $warning;
-        position: fixed;
+        position: absolute;
         top:  calc(50% - 2rem);
         left: calc(50% - 6rem);
         text-align: center;
