@@ -1,9 +1,11 @@
 import 'bootstrap';
 
 document.addEventListener("DOMContentLoaded", function() {
-    console.log('asd');
-
+    // A wrap
     wrap('main a:not(.post-thumbnail), aside a', '<span class="bkg"></span>', 'link');
+
+    // Init
+    setTimeout(function(){ document.querySelector('body').classList.add('loaded'); }, 300);
 });
 
 
