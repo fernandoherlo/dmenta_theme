@@ -10972,6 +10972,6 @@ aside a:not(.post-thumbnail):hover .bkg {
   text-align: center;
   width: 6rem;
 }
-.overlay-loading.loaded {
+.loaded .overlay-loading {
   top: 105%;
 }

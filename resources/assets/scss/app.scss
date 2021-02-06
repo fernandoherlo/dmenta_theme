@@ -296,7 +296,7 @@ aside {
         width: 6rem;
     }
 
-    &.loaded {
+    .loaded & {
         top: 105%;
     }
 }
