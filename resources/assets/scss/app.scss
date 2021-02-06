@@ -292,7 +292,7 @@ aside {
     height: 100%;
     width: 100%;
     background: $primary;
-    transition: all 0.2s ease-in-out 1.2s;
+    transition: all 0.2s ease-in-out 0.1s;
 
     span {
         font-size: 0.7rem;
@@ -306,6 +306,7 @@ aside {
     }
 
     .loaded & {
+        transition: all 0.2s ease-in-out 0.1s;
         top: 105%;
     }
 }
