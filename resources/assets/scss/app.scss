@@ -232,9 +232,9 @@ aside {
         text-decoration: none;
         border-bottom: 0.3rem solid $warning;
         &:hover {
-            color: $warning;
+            color: $warning !important;
         }
-        &:before {
+        &:after {
             position: absolute;
             top: 0;
             left: 0;
