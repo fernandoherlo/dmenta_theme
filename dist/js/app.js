@@ -3002,13 +3002,13 @@ __webpack_require__.r(__webpack_exports__);
 
 document.addEventListener("DOMContentLoaded", function () {
   console.log('asd');
-  wrap('main a', 'link');
+  wrap('main a', '<span class="bkg"></span>', 'link');
 });
 
-function wrap(selector, cssClass) {
+function wrap(selector, newHTML, cssClass) {
   document.querySelectorAll(selector).forEach(function (element) {
     var org_html = element.innerHTML;
-    var new_html = '<div id="wrap ' + cssClass + '">' + org_html + '</div>';
+    var new_html = newHTML + '<span class="wrap ' + cssClass + '">' + org_html + '</span>';
     element.innerHTML = new_html;
   });
 }
