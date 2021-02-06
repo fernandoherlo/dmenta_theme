@@ -8,26 +8,28 @@ document.addEventListener("DOMContentLoaded", function() {
     setTimeout(() => { document.querySelector('body').classList.add('loaded'); }, 300);
 
     // Links event
-    document.querySelectorAll('main a, aside a').onclick((event) => {
+    document.querySelectorAll('main a, aside a').forEach((element) => {
+        element.onclick((event) => {
 
-        console.log(this.host);
-        console.log(window.location.host);
+            console.log(this.host);
+            console.log(window.location.host);
 
-        if (this.host == window.location.host) {
+            if (this.host == window.location.host) {
 
-            console.log('asd');
-            
-            // Not loaded
-            document.querySelector('body').classList.remove('loaded');
+                console.log('asd');
+                
+                // Not loaded
+                document.querySelector('body').classList.remove('loaded');
 
-            // Go
-            setTimeout(() => { window.location.href = this.href }, 300);
+                // Go
+                setTimeout(() => { window.location.href = this.href }, 300);
 
-            return false;
-        } else {
-            return true;
-        }
+                return false;
+            } else {
+                return true;
+            }
 
+        });
     });
 });
 
