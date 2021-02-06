@@ -12,6 +12,8 @@ document.addEventListener("DOMContentLoaded", function() {
         element.addEventListener('click', (event) => {
 
             if (element.host == window.location.host) {
+
+                event.preventDefault();
                 
                 // Not loaded
                 document.querySelector('body').classList.remove('loaded');

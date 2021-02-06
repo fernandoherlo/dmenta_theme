@@ -3011,7 +3011,8 @@ document.addEventListener("DOMContentLoaded", function () {
   document.querySelectorAll('#app a').forEach(function (element) {
     element.addEventListener('click', function (event) {
       if (element.host == window.location.host) {
-        // Not loaded
+        event.preventDefault(); // Not loaded
+
         document.querySelector('body').classList.remove('loaded'); // Go
 
         setTimeout(function () {
