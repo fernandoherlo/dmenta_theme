@@ -273,6 +273,15 @@ aside {
     }
 }
 
+#app {
+    opacity: 0;
+    transition: all 0.2s ease-in-out 0.1s;
+    transition-delay: 1s;
+    .loaded & {
+        opacity: 1;
+    }
+}
+
 
 .overlay-loading {
     position: fixed;
