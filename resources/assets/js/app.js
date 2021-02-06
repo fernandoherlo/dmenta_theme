@@ -13,14 +13,12 @@ document.addEventListener("DOMContentLoaded", function() {
 
             if (element.host == window.location.host) {
                 
-                // Load
-                document.querySelector('body').classList.add('load');
-                
                 // Not loaded
-                setTimeout(() => { document.querySelector('body').classList.remove('loaded'); }, 300);
+                document.querySelector('body').classList.add('load');
+                document.querySelector('body').classList.remove('loaded');
 
                 // Go
-                setTimeout(() => { window.location.href = element.href; }, 550);
+                setTimeout(() => { window.location.href = element.href }, 300);
 
                 return false;
             } else {
