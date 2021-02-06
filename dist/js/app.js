@@ -3006,7 +3006,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   setTimeout(function () {
     document.querySelector('body').classList.add('loaded');
-  }, 300); // Links event
+  }, 100); // Links event
 
   document.querySelectorAll('#app a').forEach(function (element) {
     element.addEventListener('click', function (event) {
@@ -3017,7 +3017,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         setTimeout(function () {
           window.location.href = element.href;
-        }, 500);
+        }, 150);
         return false;
       } else {
         return true;

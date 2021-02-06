@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function() {
     wrap('main a:not(.post-thumbnail), aside a', '<span class="bkg"></span>', 'link');
 
     // Init
-    setTimeout(() => { document.querySelector('body').classList.add('loaded'); }, 300);
+    setTimeout(() => { document.querySelector('body').classList.add('loaded'); }, 100);
 
     // Links event
     document.querySelectorAll('#app a').forEach((element) => {
@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 document.querySelector('body').classList.remove('loaded');
 
                 // Go
-                setTimeout(() => { window.location.href = element.href }, 500);
+                setTimeout(() => { window.location.href = element.href }, 150);
 
                 return false;
             } else {
