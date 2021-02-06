@@ -3012,10 +3012,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
   document.querySelectorAll('#app a').forEach(function (element) {
     element.addEventListener('click', function (event) {
-      console.log(element.href);
+      console.log(element.host);
       console.log(window.location.host);
 
-      if (element.href == window.location.host) {
+      if (element.host == window.location.host) {
         console.log('asd'); // Not loaded
 
         document.querySelector('body').classList.remove('loaded'); // Go
