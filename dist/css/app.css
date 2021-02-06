@@ -10971,7 +10971,7 @@ aside a:not(.post-thumbnail):hover .bkg {
   height: 100%;
   width: 100%;
   background: #3CE2AD;
-  transition: all 0.2s ease-in-out 0.1s;
+  transition: top 0.2s ease-in-out 0.1s, background 0.2s linear;
 }
 .overlay-loading span {
   font-size: 0.7rem;
