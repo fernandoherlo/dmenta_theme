@@ -10909,23 +10909,28 @@ aside a {
   text-decoration: none;
   border-bottom: 0.3rem solid #FFEB64;
 }
-main a:hover,
-aside a:hover {
-  color: #3F404D !important;
-}
 main a .bkg,
 aside a .bkg {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 0%;
   height: 100%;
   content: "";
   background: #FFEB64;
+  transition: all 0.3s ease;
 }
 main a .wrap.link,
 aside a .wrap.link {
   position: relative;
+}
+main a:hover,
+aside a:hover {
+  color: #3F404D !important;
+}
+main a:hover .bkg,
+aside a:hover .bkg {
+  width: 100%;
 }
 
 .category-9 footer.site-footer,

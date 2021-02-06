@@ -231,20 +231,24 @@ aside {
         color: $body-color;
         text-decoration: none;
         border-bottom: 0.3rem solid $warning;
-        &:hover {
-            color: $body-color !important;
-        }
         .bkg {
             position: absolute;
             top: 0;
             left: 0;
-            width: 100%;
+            width: 0%;
             height: 100%;
             content: "";
             background: $warning;
+            transition: all 0.3s ease;
         }
         .wrap.link {
             position: relative;
+        }
+        &:hover {
+            color: $body-color !important;
+            .bkg {
+                width: 100%;
+            }
         }
     }
 }
