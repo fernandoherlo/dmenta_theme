@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 document.querySelector('body').classList.remove('loaded');
 
                 // Go
-                setTimeout(() => { window.location.href = element.href }, 1200);
+                setTimeout(() => { window.location.href = element.href }, 3200);
 
                 return false;
             } else {
