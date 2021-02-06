@@ -10946,8 +10946,10 @@ aside a:not(.post-thumbnail):hover .bkg {
 
 .category-9 footer.site-footer,
 .category-9 aside,
+.category-9 .overlay-loading,
 .page-id-23 footer.site-footer,
-.page-id-23 aside {
+.page-id-23 aside,
+.page-id-23 .overlay-loading {
   background: #6945ED;
 }
 
