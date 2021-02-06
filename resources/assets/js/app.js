@@ -8,7 +8,27 @@ document.addEventListener("DOMContentLoaded", function() {
     setTimeout(() => { document.querySelector('body').classList.add('loaded'); }, 300);
 
     // Links event
-    document.links.onclick = clicklink;
+    document.querySelectorAll('main a, aside a').onclick((event) => {
+
+        console.log(this.host);
+        console.log(window.location.host);
+
+        if (this.host == window.location.host) {
+
+            console.log('asd');
+            
+            // Not loaded
+            document.querySelector('body').classList.remove('loaded');
+
+            // Go
+            setTimeout(() => { window.location.href = this.href }, 300);
+
+            return false;
+        } else {
+            return true;
+        }
+
+    });
 });
 
 
@@ -18,25 +38,4 @@ function wrap(selector, newHTML, cssClass) {
         let new_html = newHTML + '<span class="wrap ' + cssClass + '">' + org_html + '</span>';
         element.innerHTML = new_html;
     });
-}
-
-function clicklink() {
-
-    console.log(this.host);
-    console.log(window.location.host);
-
-    if (this.host == window.location.host) {
-
-        console.log('asd');
-        
-        // Not loaded
-        document.querySelector('body').classList.remove('loaded');
-
-        // Go
-        setTimeout(() => { window.location.href = this.href }, 300);
-
-        return false;
-    } else {
-        return true;
-    }
 }
