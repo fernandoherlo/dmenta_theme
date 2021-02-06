@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function() {
     setTimeout(() => { document.querySelector('body').classList.add('loaded'); }, 300);
 
     // Links event
-    document.links.onclick= clicklink;
+    document.links.onclick = clicklink;
 });
 
 
@@ -21,7 +21,13 @@ function wrap(selector, newHTML, cssClass) {
 }
 
 function clicklink() {
+
+    console.log(this.host);
+    console.log(window.location.host);
+
     if (this.host == window.location.host) {
+
+        console.log('asd');
         
         // Not loaded
         document.querySelector('body').classList.remove('loaded');

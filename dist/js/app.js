@@ -3022,8 +3022,12 @@ function wrap(selector, newHTML, cssClass) {
 function clicklink() {
   var _this = this;
 
+  console.log(this.host);
+  console.log(window.location.host);
+
   if (this.host == window.location.host) {
-    // Not loaded
+    console.log('asd'); // Not loaded
+
     document.querySelector('body').classList.remove('loaded'); // Go
 
     setTimeout(function () {
