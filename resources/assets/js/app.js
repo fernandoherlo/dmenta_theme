@@ -1,8 +1,5 @@
 import 'bootstrap';
 
-// Initialize your components on DOM Ready.
-$(document).ready( () => {
-    
+document.addEventListener("DOMContentLoaded", function() {
     console.log('asd');
-
 });
