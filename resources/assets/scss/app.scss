@@ -312,7 +312,7 @@ aside {
     }
 
     .loaded & {
-        top: 105%;
+        top: -105%;
         background: $primary !important;
     }
 }
