@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Links event
     document.querySelectorAll('main a, aside a').forEach((element) => {
-        element.onclick((event) => {
+        element.addEventListener('click', (event) => {
 
             console.log(this.host);
             console.log(window.location.host);
@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 return true;
             }
 
-        });
+        }, false);
     });
 });
 

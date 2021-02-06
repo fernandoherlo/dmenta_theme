@@ -3011,7 +3011,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }, 300); // Links event
 
   document.querySelectorAll('main a, aside a').forEach(function (element) {
-    element.onclick(function (event) {
+    element.addEventListener('click', function (event) {
       console.log(_this.host);
       console.log(window.location.host);
 
@@ -3027,7 +3027,7 @@ document.addEventListener("DOMContentLoaded", function () {
       } else {
         return true;
       }
-    });
+    }, false);
   });
 });
 
