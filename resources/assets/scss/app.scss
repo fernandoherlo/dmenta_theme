@@ -280,6 +280,9 @@ aside {
     .loaded & {
         opacity: 1;
     }
+    .load & {
+        opacity: 0;
+    }
 }
 
 
