@@ -133,7 +133,7 @@ main {
                     a {
                         border-color: $secondary;
                         &:hover {
-                            color: $secondary;
+                            color: $white !important;
                         }
                         .bkg {
                             background: $secondary;   
