@@ -8,13 +8,13 @@ document.addEventListener("DOMContentLoaded", function() {
     setTimeout(() => { document.querySelector('body').classList.add('loaded'); }, 300);
 
     // Links event
-    document.querySelectorAll('main a, aside a').forEach((element) => {
+    document.querySelectorAll('#app a').forEach((element) => {
         element.addEventListener('click', (event) => {
 
-            console.log(this.host);
+            console.log(element.href);
             console.log(window.location.host);
 
-            if (this.host == window.location.host) {
+            if (element.href == window.location.host) {
 
                 console.log('asd');
                 
