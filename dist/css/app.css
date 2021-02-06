@@ -10953,7 +10953,7 @@ aside a:not(.post-thumbnail):hover .bkg {
 
 #app {
   opacity: 0;
-  transition: all 0.2s ease-in-out 0.1s;
+  transition: all 0.4s ease-in-out 0.3s;
   transition-delay: 0.5s;
 }
 .loaded #app {
