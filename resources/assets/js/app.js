@@ -8,7 +8,9 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 function wrap(selector, cssClass) {
-    org_html = document.querySelector(selector).innerHTML;
-    new_html = '<div id="wrap ' + cssClass + '">' + org_html + '</div>';
-    document.querySelector(selector).innerHTML = new_html;
+    document.querySelectorAll(selector).forEach(function(element) {
+        let org_html = element.innerHTML;
+        let new_html = '<div id="wrap ' + cssClass + '">' + org_html + '</div>';
+        element.innerHTML = new_html;
+    });
 }
