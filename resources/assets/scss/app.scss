@@ -89,7 +89,8 @@ main {
         }
 
         .post-thumbnail {
-            img {    
+            display: block;
+            img {
                 display: block;
                 width: 8rem;
                 height: auto;
@@ -134,6 +135,9 @@ main {
                         &:hover {
                             color: $secondary;
                         }
+                        .bkg {
+                            background: $secondary;   
+                        }
                     }
                 }
             }
@@ -150,6 +154,9 @@ main {
             .more {
                 border: 0;
                 color: $primary;
+                .bkg {
+                    background: $primary;   
+                }
             }
         }
     }
@@ -227,6 +234,7 @@ footer.site-footer {
 main,
 aside {
     a {
+        display: inline-block;
         position: relative;
         color: $body-color;
         text-decoration: none;
@@ -236,10 +244,10 @@ aside {
             top: 0;
             left: 0;
             width: 0%;
-            height: 101%;
+            height: 102%;
             content: "";
             background: $warning;
-            transition: all 0.2s ease-in-out 0.1s;
+            transition: all 0.1s ease-in-out 0.05s;
         }
         .wrap.link {
             position: relative;

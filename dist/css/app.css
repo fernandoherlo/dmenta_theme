@@ -10798,6 +10798,9 @@ main h2.fs-5, main .fs-5.h2 {
 .blog .post .entry-date {
   top: 0.74rem;
 }
+.blog .post .post-thumbnail {
+  display: block;
+}
 .blog .post .post-thumbnail img {
   display: block;
   width: 8rem;
@@ -10838,12 +10841,18 @@ main h2.fs-5, main .fs-5.h2 {
 .blog .post.format-link header h3 a:hover, .blog .post.format-link header .h3 a:hover {
   color: #6945ED;
 }
+.blog .post.format-link header h3 a .bkg, .blog .post.format-link header .h3 a .bkg {
+  background: #6945ED;
+}
 .blog .post.format-standard header h3, .blog .post.format-standard header .h3, .blog .post.format-aside header h3, .blog .post.format-aside header .h3 {
   font-size: 2rem;
 }
 .blog .post.format-standard .more, .blog .post.format-aside .more {
   border: 0;
   color: #3CE2AD;
+}
+.blog .post.format-standard .more .bkg, .blog .post.format-aside .more .bkg {
+  background: #3CE2AD;
 }
 
 .archive .post header:before {
@@ -10904,6 +10913,7 @@ footer.site-footer small, footer.site-footer .small {
 
 main a,
 aside a {
+  display: inline-block;
   position: relative;
   color: #3F404D;
   text-decoration: none;
@@ -10915,10 +10925,10 @@ aside a .bkg {
   top: 0;
   left: 0;
   width: 0%;
-  height: 101%;
+  height: 102%;
   content: "";
   background: #FFEB64;
-  transition: all 0.2s ease-in-out 0.1s;
+  transition: all 0.1s ease-in-out 0.05s;
 }
 main a .wrap.link,
 aside a .wrap.link {
