@@ -234,14 +234,14 @@ aside {
         &:hover {
             color: $warning !important;
         }
-        &:after {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            content: "";
-        }
+        // &:after {
+        //     position: absolute;
+        //     top: 0;
+        //     left: 0;
+        //     width: 100%;
+        //     height: 100%;
+        //     content: "";
+        // }
     }
 }
 
