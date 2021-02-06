@@ -25,7 +25,11 @@
 <?php wp_footer(); ?>
 
 
-<div class="overlay-loading"><span><?php echo esc_html__( 'Loading', 'dmenta_theme' ); ?></span></div>
+<div class="overlay-loading">
+    <span>
+        <img src="<?php echo get_template_directory_uri(); ?>/public/img/loading.png" alt="<?php echo esc_html__( 'Loading', 'dmenta_theme' ); ?>">
+    </span>
+</div>
 
 </body>
 </html>
