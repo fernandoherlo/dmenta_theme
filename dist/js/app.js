@@ -3001,8 +3001,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var bootstrap__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! bootstrap */ "./node_modules/bootstrap/dist/js/bootstrap.esm.js");
 
 document.addEventListener("DOMContentLoaded", function () {
-  var _this = this;
-
   // A wrap
   wrap('main a:not(.post-thumbnail), aside a', '<span class="bkg"></span>', 'link'); // Init
 
@@ -3021,7 +3019,7 @@ document.addEventListener("DOMContentLoaded", function () {
         document.querySelector('body').classList.remove('loaded'); // Go
 
         setTimeout(function () {
-          window.location.href = _this.href;
+          window.location.href = element.href;
         }, 300);
         return false;
       } else {

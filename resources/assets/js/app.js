@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 document.querySelector('body').classList.remove('loaded');
 
                 // Go
-                setTimeout(() => { window.location.href = this.href }, 300);
+                setTimeout(() => { window.location.href = element.href }, 300);
 
                 return false;
             } else {
