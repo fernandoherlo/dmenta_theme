@@ -3013,7 +3013,7 @@ document.addEventListener("DOMContentLoaded", function () {
       if (element.host == window.location.host) {
         event.preventDefault(); // Not loaded
 
-        document.querySelector('body').classList.remove('load'); // Go
+        document.querySelector('body').classList.remove('loaded'); // Go
 
         setTimeout(function () {
           window.location.href = element.href;

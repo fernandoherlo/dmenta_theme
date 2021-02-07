@@ -10989,10 +10989,6 @@ aside a:not(.post-thumbnail):hover .bkg {
   height: auto;
 }
 .loaded .overlay-loading {
-  top: -105%;
-  background: #3CE2AD !important;
-}
-.load .overlay-loading {
   top: 105%;
   background: #3CE2AD !important;
 }

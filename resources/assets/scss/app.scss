@@ -312,11 +312,6 @@ aside {
     }
 
     .loaded & {
-        top: -105%;
-        background: $primary !important;
-    }
-
-    .load & {
         top: 105%;
         background: $primary !important;
     }

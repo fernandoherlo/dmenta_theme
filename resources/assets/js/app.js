@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 event.preventDefault();
                 
                 // Not loaded
-                document.querySelector('body').classList.remove('load');
+                document.querySelector('body').classList.remove('loaded');
 
                 // Go
                 setTimeout(() => { window.location.href = element.href }, 150);
