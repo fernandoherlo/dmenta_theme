@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function() {
     document.querySelectorAll('#app a').forEach((element) => {
         element.addEventListener('click', (event) => {
 
-            if (element.host == window.location.host) {
+            if (element.host == window.location.host && element.href != window.location.href) {
 
                 event.preventDefault();
                 
