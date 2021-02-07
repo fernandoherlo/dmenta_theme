@@ -11,15 +11,18 @@ document.addEventListener("DOMContentLoaded", function() {
     document.querySelectorAll('#app a').forEach((element) => {
         element.addEventListener('click', (event) => {
 
-            if (element.host == window.location.host && element.href != window.location.href) {
+            if (element.host == window.location.host) {
 
                 event.preventDefault();
-                
-                // Not loaded
-                document.querySelector('body').classList.remove('loaded');
 
-                // Go
-                setTimeout(() => { window.location.href = element.href }, 150);
+                if (element.href != window.location.href) {
+                    
+                    // Not loaded
+                    document.querySelector('body').classList.remove('loaded');
+
+                    // Go
+                    setTimeout(() => { window.location.href = element.href }, 150);
+                }                    
 
                 return false;
             } else {
