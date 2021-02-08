@@ -1,8 +1,5 @@
 // import 'bootstrap';
-
 import { Dropdown } from 'bootstrap';
-
-
 
 document.addEventListener("DOMContentLoaded", function() {
     // A wrap
