@@ -1,4 +1,11 @@
-import 'bootstrap';
+// import 'bootstrap';
+
+// import Dropdown from 'bootstrap/js/dist/dropdown';
+// import Button from 'bootstrap/js/dist/button';
+
+import { Button, Dropdown, Popover } from 'bootstrap';
+
+
 
 document.addEventListener("DOMContentLoaded", function() {
     // A wrap

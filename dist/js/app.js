@@ -2999,6 +2999,9 @@ function within(min, value, max) {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var bootstrap__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! bootstrap */ "./node_modules/bootstrap/dist/js/bootstrap.esm.js");
+// import 'bootstrap';
+// import Dropdown from 'bootstrap/js/dist/dropdown';
+// import Button from 'bootstrap/js/dist/button';
 
 document.addEventListener("DOMContentLoaded", function () {
   // A wrap
