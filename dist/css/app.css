@@ -8781,6 +8781,10 @@ aside a:not(.post-thumbnail):hover .bkg {
   width: 100%;
 }
 
+.category-9,
+.page-id-23 {
+  background: #6945ED;
+}
 .category-9 footer.site-footer,
 .category-9 aside,
 .category-9 .overlay-loading,
