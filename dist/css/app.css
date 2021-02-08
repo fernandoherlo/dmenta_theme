@@ -46,7 +46,7 @@ body {
   font-weight: 400;
   line-height: 1.5;
   color: #3F404D;
-  background-color: #fff;
+  background-color: #3CE2AD;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
@@ -566,7 +566,7 @@ progress {
 
 .img-thumbnail {
   padding: 0.25rem;
-  background-color: #fff;
+  background-color: #3CE2AD;
   border: 1px solid #dee2e6;
   border-radius: 0.25rem;
   max-width: 100%;
@@ -2199,7 +2199,7 @@ textarea.form-control-lg {
   height: 1em;
   margin-top: 0.25em;
   vertical-align: top;
-  background-color: #fff;
+  background-color: #3CE2AD;
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -2301,10 +2301,10 @@ textarea.form-control-lg {
   outline: none;
 }
 .form-range:focus::-webkit-slider-thumb {
-  box-shadow: 0 0 0 1px #fff, 0 0 0 0.25rem rgba(60, 226, 173, 0.25);
+  box-shadow: 0 0 0 1px #3CE2AD, 0 0 0 0.25rem rgba(60, 226, 173, 0.25);
 }
 .form-range:focus::-moz-range-thumb {
-  box-shadow: 0 0 0 1px #fff, 0 0 0 0.25rem rgba(60, 226, 173, 0.25);
+  box-shadow: 0 0 0 1px #3CE2AD, 0 0 0 0.25rem rgba(60, 226, 173, 0.25);
 }
 .form-range::-moz-focus-outer {
   border: 0;
@@ -3537,8 +3537,8 @@ textarea.form-control-lg {
 .nav-tabs .nav-link.active,
 .nav-tabs .nav-item.show .nav-link {
   color: #495057;
-  background-color: #fff;
-  border-color: #dee2e6 #dee2e6 #fff;
+  background-color: #3CE2AD;
+  border-color: #dee2e6 #dee2e6 #3CE2AD;
 }
 .nav-tabs .dropdown-menu {
   margin-top: -1px;
@@ -5072,7 +5072,7 @@ textarea.form-control-lg {
 }
 
 .bg-body {
-  background-color: #fff !important;
+  background-color: #3CE2AD !important;
 }
 
 .bg-white {
@@ -8791,6 +8791,7 @@ aside a:not(.post-thumbnail):hover .bkg {
 }
 
 #app {
+  background: #fff;
   opacity: 0;
   transition: all 0.6s ease-in-out 0.5s;
   transition-delay: 0.2s;

@@ -7,6 +7,8 @@ $secondary: #6945ED;
 $warning: #FFEB64;
 $body-color: #3F404D;
 
+$body-bg: $primary;
+
 $font-family-sans-serif: 'Lato', sans-serif;
 
 // Bootrstrap
@@ -314,6 +316,7 @@ aside {
 }
 
 #app {
+    background: $white;
     opacity: 0;
     transition: all 0.6s ease-in-out 0.5s;
     transition-delay: 0.2s;
