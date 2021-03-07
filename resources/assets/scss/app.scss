@@ -314,6 +314,12 @@ aside {
     .overlay-loading {
         background: $secondary;
     }
+    main,
+    aside {
+        a:not(.post-thumbnail) {
+            border-color: $secondary;
+        }
+    }
 }
 
 #app {
