@@ -49,7 +49,11 @@
     <div class="entry-content">
         <?php
         if( is_home() ):
-            the_excerpt();
+            if ( 'gallery' === get_post_format() ) :
+                the_content();
+            else:
+                the_excerpt();
+            endif;
         else:
             the_content();
         endif;
