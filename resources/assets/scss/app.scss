@@ -340,7 +340,9 @@ aside {
             .bkg {
                 display: none;
             }
-            color: $warning;
+            &:hover {
+                color: $warning !important;
+            }
         }
     }
 }
@@ -357,13 +359,6 @@ aside {
     main {
         a:not(.post-thumbnail) {
             border-color: $secondary;
-        }
-    }
-    aside {
-        .social-icons {
-            a:not(.post-thumbnail) {
-                color: $warning;
-            }
         }
     }
 }
