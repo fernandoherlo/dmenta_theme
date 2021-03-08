@@ -9,7 +9,7 @@
 
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class('w-75'); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
     <?php dmenta_theme_post_thumbnail(); ?>
 
