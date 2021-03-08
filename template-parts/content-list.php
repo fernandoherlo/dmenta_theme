@@ -64,7 +64,7 @@
         ?>
 
         <?php
-        if( is_home() ):
+        if( is_home() && DMENTA_POST_LINK):
             if ( false === get_post_format() OR 'aside' === get_post_format() ) :
                 $categories = get_the_category();
                 if ( ! empty( $categories ) ) :
