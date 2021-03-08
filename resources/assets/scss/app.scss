@@ -11,6 +11,23 @@ $body-bg: $primary;
 
 $font-family-sans-serif: 'Lato', sans-serif;
 
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1020px,
+  xxl: 1040px
+);
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 970px,
+  xxl: 980px
+);
+
 // Bootrstrap
 // @import "~bootstrap/scss/bootstrap";
 // Required
@@ -288,7 +305,7 @@ aside {
             top: 0;
             left: 0;
             width: 0%;
-            height: 102%;
+            height: 103%;
             content: "";
             background: $warning;
             transition: all 0.1s ease-in-out 0.05s;
