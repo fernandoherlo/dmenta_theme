@@ -25,7 +25,11 @@
             <h3 class="entry-title"><a href="<?php echo esc_url( get_category_link( get_post_meta(get_the_ID(), 'link', true) ) ); ?>" rel="bookmark"><?php echo esc_html( get_the_title( get_post_meta(get_the_ID(), 'title', true) ) ); ?></a></h3>
         <?php
         else:
-            the_title( '<h3 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h3>' );
+            if (DMENTA_POST_LINK) :
+                the_title( '<h3 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h3>' );
+            else:
+                the_title( '<h3 class="entry-title">', '</h3>' );
+            endif;
         endif;
 
         if ( 'post' === get_post_type() ) :
