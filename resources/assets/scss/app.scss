@@ -76,7 +76,7 @@ $container-max-widths: (
     width: 80%;
 }
 
-@include media-breakpoint-down(sm) {
+@include media-breakpoint-down(md) {
   .w-dm-sm-100 {
     width: 100%;
   }
