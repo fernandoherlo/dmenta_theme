@@ -312,6 +312,7 @@ aside {
         text-decoration: none;
         border-bottom: 0.3rem solid $warning;
         transition: all 0.1s ease-in-out 0.05s;
+        margin-bottom: -0.3rem;
         .bkg {
             position: absolute;
             top: 0;
@@ -333,6 +334,16 @@ aside {
         }
     }
 }
+aside {
+    .social-icons {
+        a:not(.post-thumbnail) {
+            .bkg {
+                display: none;
+            }
+            color: $warning;
+        }
+    }
+}
 
 
 .category-9,
@@ -343,10 +354,16 @@ aside {
     .overlay-loading {
         background: $secondary;
     }
-    main,
-    aside {
+    main {
         a:not(.post-thumbnail) {
             border-color: $secondary;
+        }
+    }
+    aside {
+        .social-icons {
+            a:not(.post-thumbnail) {
+                color: $secondary;
+            }
         }
     }
 }
