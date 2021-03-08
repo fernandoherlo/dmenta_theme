@@ -15,7 +15,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <small>© <?php echo date('Y');?> <?php bloginfo( 'name' ); ?>. All rights reserved.</small>
+                    <small>© <?php echo date('Y');?> <?php bloginfo( 'name' ); ?>. <?php esc_html_e('Todos los derechos reservados.') ?></small>
                 </div>
             </div>
         </div>
