@@ -11,27 +11,33 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Links event
     document.querySelectorAll('#app a').forEach((element) => {
-        element.addEventListener('click', (event) => {
 
-            if (element.host == window.location.host) {
+        // If gallery
+        if (element.closest('.wp-block-gallery') != null) {
+            // Link
+            element.addEventListener('click', (event) => {
 
-                event.preventDefault();
+                if (element.host == window.location.host) {
 
-                if (element.href != window.location.href) {
-                    
-                    // Not loaded
-                    document.querySelector('body').classList.remove('loaded');
+                    event.preventDefault();
 
-                    // Go
-                    setTimeout(() => { window.location.href = element.href }, 150);
-                }                    
+                    if (element.href != window.location.href) {
+                        
+                        // Not loaded
+                        document.querySelector('body').classList.remove('loaded');
 
-                return false;
-            } else {
-                return true;
-            }
+                        // Go
+                        setTimeout(() => { window.location.href = element.href }, 150);
+                    }                    
 
-        }, false);
+                    return false;
+                } else {
+                    return true;
+                }
+
+            }, false);
+        }
+
     });
 
     // Lightbox
