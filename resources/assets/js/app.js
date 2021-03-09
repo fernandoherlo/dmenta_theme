@@ -13,7 +13,10 @@ document.addEventListener("DOMContentLoaded", function() {
     document.querySelectorAll('#app a').forEach((element) => {
 
         // If gallery
-        if (element.closest('.wp-block-gallery') != null) {
+        if (element.closest('.wp-block-gallery') === null) {
+
+            console.log()
+
             // Link
             element.addEventListener('click', (event) => {
 
