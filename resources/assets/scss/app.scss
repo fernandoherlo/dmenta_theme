@@ -368,6 +368,12 @@ aside {
     main {
         a:not(.post-thumbnail) {
             border-color: $secondary;
+            .bkg {
+                background: $secondary;
+            }
+            &:hover {
+                color: $white !important;
+            }
         }
     }
 }
