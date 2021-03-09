@@ -74,6 +74,10 @@ $container-max-widths: (
 // Simplelightbox
 @import "../../../node_modules/simplelightbox/src/simple-lightbox";
 
+.sl-wrapper .sl-navigation button.sl-next,
+.sl-wrapper .sl-navigation button.sl-prev {
+    outline: none !important;
+}
 
 
 
