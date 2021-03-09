@@ -1,5 +1,6 @@
 // import 'bootstrap';
 import { Dropdown } from 'bootstrap';
+import SimpleLightbox from 'simplelightbox';
 
 document.addEventListener("DOMContentLoaded", function() {
     // A wrap
@@ -32,6 +33,9 @@ document.addEventListener("DOMContentLoaded", function() {
 
         }, false);
     });
+
+    // Lightbox
+    new SimpleLightbox('.wp-block-gallery a', { /* options */ });
 });
 
 

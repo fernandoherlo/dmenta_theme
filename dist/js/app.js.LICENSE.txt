@@ -1,4 +1,11 @@
 /*!
+	By André Rinas, www.andrerinas.de
+	Documentation, www.simplelightbox.de
+	Available for use under the MIT License
+	Version 2.7.0
+*/
+
+/*!
   * Bootstrap v5.0.0-beta1 (https://getbootstrap.com/)
   * Copyright 2011-2020 The Bootstrap Authors (https://github.com/twbs/bootstrap/graphs/contributors)
   * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
