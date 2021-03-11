@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"impo",
+				"important"
+			],
+			[
 				"font",
 				"font-size\tproperty"
 			],
@@ -510,15 +514,55 @@
 			[
 				"ne",
 				"need_invoice"
-			],
-			[
-				"dum",
-				"var_dump"
 			]
 		]
 	},
 	"buffers":
 	[
+		{
+			"file": "template-parts/content-list.php",
+			"settings":
+			{
+				"buffer_size": 2555,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "resources/assets/js/app.js",
+			"settings":
+			{
+				"buffer_size": 1757,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "resources/assets/scss/app.scss",
+			"settings":
+			{
+				"buffer_size": 9794,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "functions.php",
+			"settings":
+			{
+				"buffer_size": 6925,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "comments.php",
+			"settings":
+			{
+				"buffer_size": 2018,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -621,8 +665,11 @@
 	],
 	"file_history":
 	[
-		"/Users/nano/Develop/Projects/dmenta_theme/resources/assets/js/app.js",
 		"/Users/nano/Develop/Projects/dmenta_theme/resources/assets/scss/app.scss",
+		"/Users/nano/Develop/Projects/dmenta_theme/package.json",
+		"/Users/nano/Develop/Projects/dmenta_theme/dist/css/app.css",
+		"/Users/nano/Develop/Projects/dmenta_theme/footer.php",
+		"/Users/nano/Develop/Projects/dmenta_theme/resources/assets/js/app.js",
 		"/Users/nano/Develop/Projects/dmenta_theme/sidebar.php",
 		"/Users/nano/Develop/Projects/dmenta_theme/single.php",
 		"/Users/nano/Develop/Projects/dmenta_theme/inc/template-tags.php",
@@ -636,13 +683,11 @@
 		"/Users/nano/Develop/Projects/dmenta_theme/template-parts/content-none.php",
 		"/Users/nano/Develop/Projects/dmenta_theme/template-parts/content-page.php",
 		"/Users/nano/Develop/Projects/dmenta_theme/webpack.mix.js",
-		"/Users/nano/Develop/Projects/dmenta_theme/footer.php",
 		"/Users/nano/Develop/Projects/dmenta_theme/header.php",
 		"/Users/nano/Develop/Projects/dmenta_theme/404.php",
 		"/Users/nano/Develop/Projects/dmenta_theme/resources/assets/img/dmenta.svg",
 		"/Users/nano/Desktop/dmenta_theme/functions.php",
 		"/Users/nano/Develop/Projects/dmenta_theme/page.php",
-		"/Users/nano/Develop/Projects/dmenta_theme/package.json",
 		"/Users/nano/Develop/Projects/dmenta_theme/.gitignore",
 		"/Users/nano/Desktop/efg3443g/index.php",
 		"/Users/nano/Develop/Projects/dmenta_theme/src/js/app.js",
@@ -747,12 +792,11 @@
 		"/Users/nano/Develop/Projects/random_photos/lib/functions.py",
 		"/Users/nano/Develop/Projects/random_photos/_config_bk.json",
 		"/Users/nano/Develop/Projects/random_photos/lib/publish/wordpress/post.py",
-		"/Users/nano/Develop/Projects/random_photos/_projects.json",
-		"/Users/nano/Develop/Projects/random_photos/.env"
+		"/Users/nano/Develop/Projects/random_photos/_projects.json"
 	],
 	"find":
 	{
-		"height": 27.0
+		"height": 70.0
 	},
 	"find_in_files":
 	{
@@ -766,6 +810,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"-dm",
+			"w-dm",
 			"~"
 		],
 		"highlight": true,
@@ -785,8 +831,158 @@
 	"groups":
 	[
 		{
+			"selected": 2,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "template-parts/content-list.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2555,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2025,
+								2025
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "resources/assets/js/app.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1757,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1417,
+								1417
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "resources/assets/scss/app.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 9794,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								8941,
+								8941
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/SCSS.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 4698.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "functions.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6925,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								167,
+								183
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "comments.php",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 2018,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -829,7 +1025,7 @@
 	"project": "dmenta_theme.sublime-project",
 	"replace":
 	{
-		"height": 114.0
+		"height": 50.0
 	},
 	"save_all_on_build": true,
 	"select_file":
