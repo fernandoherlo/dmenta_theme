@@ -69,7 +69,7 @@
                 $categories = get_the_category();
                 if ( ! empty( $categories ) && DMENTA_POST_LINK ) :
                 ?>
-                    <a class="more" href="<?php echo esc_url( get_permalink() ); ?>" rel="bookmark"><?php echo esc_html__( 'More about', 'dmenta_theme' ) . ' ' . esc_html( strtolower($categories[0]->name) ); ?></a>
+                    <a class="more" href="<?php echo esc_url( get_permalink() ); ?>" rel="bookmark"><?php echo esc_html__( 'More about', 'dmenta_theme' ) . ' ' . esc_html( get_the_title( get_post_meta(get_the_ID(), 'title', true) ) ); ?></a>
                 <?php
                 endif;
 
