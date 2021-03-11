@@ -160,7 +160,10 @@ main {
         }
         .tags-links {
             display: block;
+            margin-bottom: 1rem;
             a {
+                text-transform: uppercase;
+                font-size: .6em;
                 border-bottom: 0;
                 margin-bottom: 0;
                 @extend .badge;

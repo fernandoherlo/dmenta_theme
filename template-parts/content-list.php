@@ -67,7 +67,7 @@
         if( is_home()):
             if ( false === get_post_format() OR 'aside' === get_post_format() ) :
 
-                $tags_list = get_the_tag_list( '', esc_html_x( ', ', 'list item separator', 'dmenta_theme' ) );
+                $tags_list = get_the_tag_list( '', esc_html_x( ' ', 'list item separator', 'dmenta_theme' ) );
                 if ( $tags_list ) {
                     printf( '<span class="tags-links">' . esc_html__( '%1$s', 'dmenta_theme' ) . '</span>', $tags_list );
                 }
