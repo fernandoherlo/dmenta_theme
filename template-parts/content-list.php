@@ -66,17 +66,18 @@
         <?php
         if( is_home()):
             if ( false === get_post_format() OR 'aside' === get_post_format() ) :
+
+                $tags_list = get_the_tag_list( '', esc_html_x( ', ', 'list item separator', 'dmenta_theme' ) );
+                if ( $tags_list ) {
+                    printf( '<span class="tags-links">' . esc_html__( '%1$s', 'dmenta_theme' ) . '</span>', $tags_list );
+                }
+
                 $categories = get_the_category();
                 if ( ! empty( $categories ) && DMENTA_POST_LINK ) :
                 ?>
                     <a class="more" href="<?php echo esc_url( get_permalink() ); ?>" rel="bookmark"><?php echo esc_html__( 'More about', 'dmenta_theme' ) . ' ' . esc_html( get_the_title( get_post_meta(get_the_ID(), 'title', true) ) ); ?></a>
                 <?php
                 endif;
-
-                $tags_list = get_the_tag_list( '', esc_html_x( ', ', 'list item separator', 'dmenta_theme' ) );
-                if ( $tags_list ) {
-                    printf( '<span class="tags-links">' . esc_html__( '%1$s', 'dmenta_theme' ) . '</span>', $tags_list );
-                }
 
             endif;
         endif;
