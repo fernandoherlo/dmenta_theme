@@ -72,6 +72,12 @@
                     <a class="more" href="<?php echo esc_url( get_permalink() ); ?>" rel="bookmark"><?php echo esc_html__( 'More about', 'dmenta_theme' ) . ' ' . esc_html( strtolower($categories[0]->name) ); ?></a>
                 <?php
                 endif;
+
+                $tags_list = get_the_tag_list( '', esc_html_x( ', ', 'list item separator', 'dmenta_theme' ) );
+                if ( $tags_list ) {
+                    printf( '<span class="tags-links">' . esc_html__( 'Tagged %1$s', 'dmenta_theme' ) . '</span>', $tags_list );
+                }
+
             endif;
         endif;
         ?>
