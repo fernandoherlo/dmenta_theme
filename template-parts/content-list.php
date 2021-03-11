@@ -64,10 +64,10 @@
         ?>
 
         <?php
-        if( is_home() && DMENTA_POST_LINK):
+        if( is_home()):
             if ( false === get_post_format() OR 'aside' === get_post_format() ) :
                 $categories = get_the_category();
-                if ( ! empty( $categories ) ) :
+                if ( ! empty( $categories ) && DMENTA_POST_LINK ) :
                 ?>
                     <a class="more" href="<?php echo esc_url( get_permalink() ); ?>" rel="bookmark"><?php echo esc_html__( 'More about', 'dmenta_theme' ) . ' ' . esc_html( strtolower($categories[0]->name) ); ?></a>
                 <?php
