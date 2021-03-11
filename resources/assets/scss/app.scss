@@ -161,7 +161,10 @@ main {
         .tags-links {
             display: block;
             a {
+                border-bottom: 0;
+                margin-bottom: 0;
                 @extend .badge;
+                @extend .bg-primary;
             }
         }
     }
