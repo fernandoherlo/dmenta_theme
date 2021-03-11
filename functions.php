@@ -7,7 +7,10 @@
  * @package dmenta_theme
  */
 
-define(DMENTA_POST_LINK, false);
+/**
+ * CONFIG
+ */
+require_once 'config.php';
 
 
 if ( ! defined( '_S_VERSION' ) ) {
