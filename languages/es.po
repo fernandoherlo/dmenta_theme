@@ -4,15 +4,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: dmenta 1.0.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/dmenta\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "POT-Creation-Date: 2020-04-17T21:03:15+00:00\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"X-Generator: WP-CLI 2.4.0\n"
+"PO-Revision-Date: 2021-03-20 13:33+0100\n"
+"X-Generator: Poedit 2.4.2\n"
 "X-Domain: dmenta\n"
+"Last-Translator: \n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: es\n"
 
 #. Theme Name of the theme
 msgid "dmenta"
@@ -23,7 +25,11 @@ msgid "https://underscores.me/"
 msgstr ""
 
 #. Description of the theme
-msgid "Hi. I'm a starter theme called <code>dmenta</code>, or <em>underscores</em>, if you like. I'm a theme meant for hacking so don't use me as a <em>Parent Theme</em>. Instead try turning me into the next, most awesome, WordPress theme out there. That's what I'm here for."
+msgid ""
+"Hi. I'm a starter theme called <code>dmenta</code>, or <em>underscores</em>, "
+"if you like. I'm a theme meant for hacking so don't use me as a <em>Parent "
+"Theme</em>. Instead try turning me into the next, most awesome, WordPress "
+"theme out there. That's what I'm here for."
 msgstr ""
 
 #. Author of the theme
@@ -36,37 +42,41 @@ msgstr ""
 
 #: 404.php:18
 msgid "Oops! That page can&rsquo;t be found."
-msgstr ""
+msgstr "Oops! Esa página no puede ser encontrada."
 
 #: 404.php:22
-msgid "It looks like nothing was found at this location. Maybe try one of the links below or a search?"
+msgid ""
+"It looks like nothing was found at this location. Maybe try one of the links "
+"below or a search?"
 msgstr ""
+"Parece que no se encontró nada en este lugar. Tal vez pruebe uno de los "
+"siguientes enlaces o una búsqueda?"
 
 #: 404.php:31
 msgid "Most Used Categories"
-msgstr ""
+msgstr "Categorías más usadas"
 
 #. translators: %1$s: smiley
 #: 404.php:49
 msgid "Try looking in the monthly archives. %1$s"
-msgstr ""
+msgstr "Trate de buscar en los archivos mensuales. %1$s"
 
 #. translators: 1: title.
 #: comments.php:35
 msgid "One thought on &ldquo;%1$s&rdquo;"
-msgstr ""
+msgstr "Un pensamiento en &ldquo;%1$s&rdquo;"
 
 #. translators: 1: comment count number, 2: title.
 #: comments.php:41
 msgctxt "comments title"
 msgid "%1$s thought on &ldquo;%2$s&rdquo;"
 msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
-msgstr[0] ""
+msgstr[0] "%1$s comentario en &ldquo;%2$s&rdquo;"
 msgstr[1] ""
 
 #: comments.php:68
 msgid "Comments are closed."
-msgstr ""
+msgstr "Los comentarios están cerrados."
 
 #: footer.php:18
 msgid "https://wordpress.org/"
@@ -75,7 +85,7 @@ msgstr ""
 #. translators: %s: CMS name, i.e. WordPress.
 #: footer.php:21
 msgid "Proudly powered by %s"
-msgstr ""
+msgstr "Con la tecnología de %s"
 
 #. translators: 1: Theme name, 2: Theme author.
 #: footer.php:27
@@ -141,8 +151,7 @@ msgid "Leave a Comment<span class=\"screen-reader-text\"> on %s</span>"
 msgstr ""
 
 #. translators: %s: Name of current post. Only visible to screen readers
-#: inc/template-tags.php:100
-#: template-parts/content-page.php:39
+#: inc/template-tags.php:100 template-parts/content-page.php:39
 msgid "Edit <span class=\"screen-reader-text\">%s</span>"
 msgstr ""
 
@@ -176,19 +185,23 @@ msgstr ""
 
 #. translators: 1: link to WP admin new post page.
 #: template-parts/content-none.php:24
-msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
 msgstr ""
 
 #: template-parts/content-none.php:37
-msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
 msgstr ""
 
 #: template-parts/content-none.php:44
-msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
 msgstr ""
 
-#: template-parts/content-page.php:25
-#: template-parts/content.php:53
+#: template-parts/content-page.php:25 template-parts/content.php:53
 msgid "Pages:"
 msgstr ""
 
