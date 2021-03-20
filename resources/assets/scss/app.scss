@@ -501,7 +501,7 @@ aside {
 }
 
 
-@include media-breakpoint-down(md) {
+@include media-breakpoint-down(sm) {
     aside {
         .background {
             background-position-x: 4rem;
