@@ -580,7 +580,7 @@ aside {
 @include media-breakpoint-down(sm) {
     .navbar,
     main {
-        margin: 1rem;
+        margin: 0 1rem !important;
     }
     .navbar {
         padding-top: 1rem;
