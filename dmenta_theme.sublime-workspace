@@ -4,6 +4,14 @@
 		"selected_items":
 		[
 			[
+				"mar",
+				"margin-bottom\tproperty"
+			],
+			[
+				"borde",
+				"border-bottom\tproperty"
+			],
+			[
 				"impo",
 				"important"
 			],
@@ -22,10 +30,6 @@
 			[
 				"bor",
 				"border"
-			],
-			[
-				"mar",
-				"margin-top\tproperty"
 			],
 			[
 				"text",
@@ -328,10 +332,6 @@
 				"sub_secciones_response"
 			],
 			[
-				"borde",
-				"border-radius"
-			],
-			[
 				"super",
 				"super_secciones"
 			],
@@ -523,16 +523,7 @@
 			"file": "template-parts/content-list.php",
 			"settings":
 			{
-				"buffer_size": 2555,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "resources/assets/js/app.js",
-			"settings":
-			{
-				"buffer_size": 1757,
+				"buffer_size": 2872,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -541,7 +532,33 @@
 			"file": "resources/assets/scss/app.scss",
 			"settings":
 			{
-				"buffer_size": 9794,
+				"buffer_size": 10236,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "package.json",
+			"settings":
+			{
+				"buffer_size": 1268,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "webpack.mix.js",
+			"settings":
+			{
+				"buffer_size": 323,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "config.php",
+			"settings":
+			{
+				"buffer_size": 39,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -550,16 +567,8 @@
 			"file": "functions.php",
 			"settings":
 			{
-				"buffer_size": 6925,
+				"buffer_size": 6937,
 				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "comments.php",
-			"settings":
-			{
-				"buffer_size": 2018,
 				"line_ending": "Unix"
 			}
 		}
@@ -661,25 +670,26 @@
 		"/Users/nano/Develop/Projects/dmenta_theme/resources",
 		"/Users/nano/Develop/Projects/dmenta_theme/resources/assets",
 		"/Users/nano/Develop/Projects/dmenta_theme/resources/assets/js",
-		"/Users/nano/Develop/Projects/dmenta_theme/resources/assets/scss"
+		"/Users/nano/Develop/Projects/dmenta_theme/resources/assets/scss",
+		"/Users/nano/Develop/Projects/dmenta_theme/template-parts"
 	],
 	"file_history":
 	[
+		"/Users/nano/Develop/Projects/dmenta_theme/template-parts/content-search.php",
+		"/Users/nano/Develop/Projects/dmenta_theme/functions.php",
+		"/Users/nano/Develop/Projects/dmenta_theme/sidebar.php",
+		"/Users/nano/Develop/Projects/dmenta_theme/template-parts/content-list.php",
+		"/Users/nano/Develop/Projects/dmenta_theme/resources/assets/js/app.js",
 		"/Users/nano/Develop/Projects/dmenta_theme/resources/assets/scss/app.scss",
 		"/Users/nano/Develop/Projects/dmenta_theme/package.json",
 		"/Users/nano/Develop/Projects/dmenta_theme/dist/css/app.css",
 		"/Users/nano/Develop/Projects/dmenta_theme/footer.php",
-		"/Users/nano/Develop/Projects/dmenta_theme/resources/assets/js/app.js",
-		"/Users/nano/Develop/Projects/dmenta_theme/sidebar.php",
 		"/Users/nano/Develop/Projects/dmenta_theme/single.php",
 		"/Users/nano/Develop/Projects/dmenta_theme/inc/template-tags.php",
-		"/Users/nano/Develop/Projects/dmenta_theme/template-parts/content-search.php",
-		"/Users/nano/Develop/Projects/dmenta_theme/template-parts/content-list.php",
 		"/Users/nano/Develop/Projects/dmenta_theme/template-parts/content.php",
 		"/Users/nano/Develop/Projects/dmenta_theme/archive.php",
 		"/Users/nano/Develop/Projects/dmenta_theme/index.php",
 		"/Users/nano/Develop/Projects/dmenta_theme/search.php",
-		"/Users/nano/Develop/Projects/dmenta_theme/functions.php",
 		"/Users/nano/Develop/Projects/dmenta_theme/template-parts/content-none.php",
 		"/Users/nano/Develop/Projects/dmenta_theme/template-parts/content-page.php",
 		"/Users/nano/Develop/Projects/dmenta_theme/webpack.mix.js",
@@ -796,13 +806,14 @@
 	],
 	"find":
 	{
-		"height": 70.0
+		"height": 27.0
 	},
 	"find_in_files":
 	{
 		"height": 186.0,
 		"where_history":
 		[
+			"/Users/nano/Develop/Projects/dmenta_theme/template-parts"
 		]
 	},
 	"find_state":
@@ -810,6 +821,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"dmenta_theme_entry_footer",
 			"-dm",
 			"w-dm",
 			"~"
@@ -831,7 +843,7 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 1,
 			"sheets":
 			[
 				{
@@ -840,15 +852,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2555,
+						"buffer_size": 2872,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2025,
-								2025
+								2155,
+								2155
 							]
 						],
 						"settings":
@@ -861,54 +873,24 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "resources/assets/js/app.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1757,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1417,
-								1417
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
 					"file": "resources/assets/scss/app.scss",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 9794,
+						"buffer_size": 10236,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								8941,
-								8941
+								4456,
+								4456
 							]
 						],
 						"settings":
@@ -918,32 +900,32 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 4698.0,
+						"translation.y": 1771.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
 					"type": "text"
 				},
 				{
-					"buffer": 3,
-					"file": "functions.php",
+					"buffer": 2,
+					"file": "package.json",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 6925,
+						"buffer_size": 1268,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								167,
-								183
+								1203,
+								1203
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"syntax": "Packages/zzz A File Icon zzz/aliases/JSON (NPM).sublime-syntax",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
@@ -955,12 +937,12 @@
 					"type": "text"
 				},
 				{
-					"buffer": 4,
-					"file": "comments.php",
-					"semi_transient": true,
+					"buffer": 3,
+					"file": "webpack.mix.js",
+					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2018,
+						"buffer_size": 323,
 						"regions":
 						{
 						},
@@ -973,14 +955,73 @@
 						],
 						"settings":
 						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"translate_tabs_to_spaces": false
+							"syntax": "Packages/zzz A File Icon zzz/aliases/JavaScript (Webpack).sublime-syntax"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "config.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 39,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								36,
+								36
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "functions.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6937,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								173,
+								173
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
 					"type": "text"
 				}
 			]
@@ -1053,7 +1094,7 @@
 		"selected_items":
 		[
 		],
-		"width": 574.0
+		"width": 1334.0
 	},
 	"selected_group": 0,
 	"settings":

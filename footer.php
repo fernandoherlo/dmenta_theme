@@ -14,7 +14,19 @@
     <footer class="site-footer">
         <div class="container">
             <div class="row">
-                <div class="col-12">
+                <div class="col-12 col-sm-6">
+                    <?php
+                        wp_nav_menu(
+                            array(
+                                'theme_location' => 'menu-2',
+                                'menu_id'        => 'secondary-menu',
+                                'container_id'   => 'secondary-menu',
+                                'bootstrap'      => true
+                            )
+                        );
+                    ?>
+                </div>
+                <div class="col-12 col-sm-6">
                     <small>© <?php echo date('Y');?> <?php bloginfo( 'name' ); ?>. <?php esc_html_e('Todos los derechos reservados.') ?></small>
                 </div>
             </div>
