@@ -9474,14 +9474,14 @@ aside .social-icons a:not(.post-thumbnail):hover {
 
   aside {
     text-align: center !important;
-    padding-bottom: 4rem !important;
+    padding-bottom: 2rem !important;
     padding-top: 11rem !important;
     margin-top: 22rem !important;
   }
   aside .background {
     background-position-x: 1rem !important;
     background-size: 120% !important;
-    top: -32rem !important;
+    top: -25rem !important;
     right: 0rem !important;
   }
 
