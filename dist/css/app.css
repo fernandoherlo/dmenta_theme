@@ -9065,7 +9065,7 @@ body.hidden-scroll {
 .navbar .navbar-nav .close a {
   color: #fff;
   cursor: pointer;
-  padding: 0.6rem;
+  padding: 0.1rem 0.8rem 0.25rem;
   font-size: 2rem;
   outline: none;
   background: rgba(255, 255, 255, 0.1);
@@ -9086,6 +9086,7 @@ main h2.fs-5, main .fs-5.h2 {
 .archive .post {
   padding: 2rem 2rem 4rem 3rem;
   border-left: 1px solid #ced4da;
+  margin-left: 5rem;
 }
 .blog .post header,
 .archive .post header {
