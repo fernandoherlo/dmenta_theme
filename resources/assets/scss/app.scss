@@ -118,6 +118,19 @@ $container-max-widths: (
             background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 80' width='40' height='40' fill='%233ce2ad'%3E%3Crect width='100' height='10'%3E%3C/rect%3E%3Crect y='30' width='100' height='10'%3E%3C/rect%3E%3Crect y='60' width='100' height='10'%3E%3C/rect%3E%3C/svg%3E");
         }
     }
+    .navbar-nav .close {
+        display: none;
+        a {
+            color: $white;
+            cursor: pointer;
+            padding: 0.2rem;
+            font-size: 2rem;
+            outline: none;
+            background: rgba($white, 0.1);
+            border-radius: 1rem;
+            
+        }
+    }
 }
 
 main {

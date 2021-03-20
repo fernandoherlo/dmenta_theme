@@ -56,7 +56,7 @@ document.addEventListener("DOMContentLoaded", function() {
         var li = document.createElement('li');
         var a = document.createElement('a');
 
-        a.appendChild(document.createTextNode('X'));
+        a.appendChild(document.createTextNode('&times;'));
         a.onclick = () => jQuery('#primary-menu').collapse('hide');
 
         li.classList.add('close');
