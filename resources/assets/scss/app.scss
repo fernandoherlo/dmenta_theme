@@ -453,3 +453,12 @@ aside {
         background: $primary !important;
     }
 }
+
+#cookie-law-info-bar {
+    inset: 0;
+    padding: 0.5rem;
+    div {
+        display: auto !important;
+        width: auto !important;
+    }
+}
