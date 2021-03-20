@@ -9220,6 +9220,9 @@ aside {
   background: #3CE2AD;
   margin-top: 10rem;
 }
+aside .bgcol {
+  background: #3CE2AD;
+}
 aside .row {
   position: relative;
 }
@@ -9244,7 +9247,7 @@ aside .background {
   background: url(../img/dmenta-background-1.png) right 0 no-repeat;
   background-size: 50% 50%;
   height: 32rem;
-  background-size: contain;
+  background-size: cover;
 }
 
 .page-id-23 aside {
@@ -9347,6 +9350,10 @@ aside .social-icons a:not(.post-thumbnail):hover {
 .page-id-23 footer.site-footer,
 .page-id-23 aside,
 .page-id-23 .overlay-loading {
+  background: #6945ED;
+}
+.category-9 aside .bgcol,
+.page-id-23 aside .bgcol {
   background: #6945ED;
 }
 .category-9 main a:not(.post-thumbnail),
@@ -9461,11 +9468,12 @@ aside .social-icons a:not(.post-thumbnail):hover {
   aside {
     text-align: center !important;
     padding-bottom: 4rem !important;
-    padding-top: 14rem !important;
+    padding-top: 11rem !important;
     margin-top: 16rem !important;
   }
   aside .background {
-    top: -28rem !important;
+    top: -25rem !important;
+    right: 3rem !important;
   }
 
   footer.site-footer {
