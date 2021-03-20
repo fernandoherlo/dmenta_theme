@@ -340,9 +340,9 @@ aside {
         right: 0;
         top: -10.83rem;
         background: url(../img/dmenta-background-1.png) right 0 no-repeat;
-        background-size: 50% 50%;
+        // background-size: 50% 50%;
         height: 32rem;
-        background-size: cover;
+        background-size: contain;
     }
 }
 
@@ -578,14 +578,23 @@ aside {
     }
 }
 @include media-breakpoint-down(sm) {
+    .navbar {
+        padding-top: 1rem;
+        padding-bottom: 2.6rem;
+        .navbar-brand {
+            width: 11rem;
+        }
+    }
     aside {
         text-align: center !important;
         padding-bottom: 4rem !important;
         padding-top: 11rem !important;
-        margin-top: 16rem !important;
+        margin-top: 22rem !important;
         .background {
-            top: -25rem !important;
-            right: 3rem !important;
+            background-position-x: 1rem !important;
+            background-size: 120% !important;
+            top: -32rem !important;
+            right: 0rem !important;
         }
     }
     footer {
