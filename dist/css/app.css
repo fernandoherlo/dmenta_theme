@@ -9025,6 +9025,10 @@ body.hidden-scroll {
   outline: none !important;
 }
 
+a {
+  overflow-wrap: anywhere;
+}
+
 .w-dm-80 {
   width: 80%;
 }
@@ -9451,5 +9455,23 @@ aside .social-icons a:not(.post-thumbnail):hover {
   .category-9 aside .background {
     top: -11.55rem;
     background-position-x: 7.5rem;
+  }
+}
+@media (max-width: 575.98px) {
+  aside {
+    text-align: center !important;
+    padding-bottom: 4rem !important;
+    padding-top: 14rem !important;
+    margin-top: 16rem !important;
+  }
+  aside .background {
+    top: -28rem !important;
+  }
+
+  footer .site-footer {
+    text-align: center;
+  }
+  footer .site-footer #secondary-menu {
+    text-align: center;
   }
 }

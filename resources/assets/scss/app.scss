@@ -79,6 +79,9 @@ $container-max-widths: (
     outline: none !important;
 }
 
+a {
+    overflow-wrap: anywhere;
+}
 
 .w-dm-80 {
     width: 80%;
@@ -564,6 +567,25 @@ aside {
             .background {
                 top: -11.55rem;
                 background-position-x: 7.5rem;
+            }
+        }
+    }
+}
+@include media-breakpoint-down(sm) {
+    aside {
+        text-align: center !important;
+        padding-bottom: 4rem !important;
+        padding-top: 14rem !important;
+        margin-top: 16rem !important;
+        .background {
+            top: -28rem !important;
+        }
+    }
+    footer {
+        .site-footer {
+            text-align: center;
+            #secondary-menu {
+                text-align: center;
             }
         }
     }

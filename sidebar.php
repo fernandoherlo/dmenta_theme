@@ -18,7 +18,7 @@ if ( ! is_active_sidebar( 'sidebar-1' ) ) {
             <div class="col-12 col-sm-6 col-md-6 col-lg-4">
                 <?php dynamic_sidebar( 'sidebar-1' ); ?>
             </div>
-            <div class="col-8 background"></div>
+            <div class="col-12 col-xs-8 background"></div>
         </div>
     </div>
 </aside>
