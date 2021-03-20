@@ -80,7 +80,6 @@ $container-max-widths: (
 }
 
 
-
 .w-dm-80 {
     width: 80%;
 }
@@ -325,6 +324,9 @@ footer.site-footer {
     background: $primary;
     small {
         font-style: italic;
+    }
+    #secondary-menu {
+        text-align: left;
     }
 }
 

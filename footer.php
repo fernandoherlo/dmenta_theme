@@ -20,7 +20,6 @@
                             array(
                                 'theme_location' => 'menu-2',
                                 'menu_id'        => 'secondary-menu',
-                                'container_id'   => 'secondary-menu',
                                 'bootstrap'      => true
                             )
                         );
