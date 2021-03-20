@@ -15,6 +15,9 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 col-sm-6">
+                    <small>© <?php echo date('Y');?> <?php bloginfo( 'name' ); ?>. <?php esc_html_e('Todos los derechos reservados.') ?></small>
+                </div>
+                <div class="col-12 col-sm-6">
                     <?php
                         wp_nav_menu(
                             array(
@@ -24,9 +27,6 @@
                             )
                         );
                     ?>
-                </div>
-                <div class="col-12 col-sm-6">
-                    <small>© <?php echo date('Y');?> <?php bloginfo( 'name' ); ?>. <?php esc_html_e('Todos los derechos reservados.') ?></small>
                 </div>
             </div>
         </div>

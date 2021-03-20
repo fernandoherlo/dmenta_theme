@@ -318,7 +318,6 @@ aside {
 }
 
 footer.site-footer {
-    text-align: right;
     padding-top: 4rem;
     padding-bottom: 4rem;
     background: $primary;
@@ -328,8 +327,9 @@ footer.site-footer {
     #secondary-menu {
         margin: 0;
         padding: 0;
-        text-align: left;
+        text-align: right;
         list-style: none;
+        font-size: .875em;
         li {
             a {
                 color: $white;
