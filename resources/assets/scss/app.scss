@@ -314,6 +314,8 @@ aside {
 
     .bgcol {
         background: $primary;
+        z-index: 3;
+        position: relative;
     }
     .row {
         position: relative;
@@ -593,14 +595,20 @@ aside {
         margin: 0 -1rem;
         text-align: center !important;
         padding-bottom: 2rem !important;
-        padding-top: 11rem !important;
-        margin-top: 18rem !important;
+        padding-top: 13rem !important;
+        margin-top: 14rem !important;
         .background {
             background-position-x: 1rem !important;
             background-size: 120% !important;
             top: -25rem !important;
             right: 0rem !important;
         }
+        .bgcol {
+            padding: 0 1rem;
+        }
+    }
+    .page-id-23 aside {
+        margin-top: 23rem !important;
     }
     .category-9 aside .background {
         top: -21rem!important;
@@ -612,6 +620,7 @@ aside {
     }
     .blog aside .background,
     .page-id-241 aside .background {
+        top: -27rem!important;
         background-position-x: 2rem!important;
         background-size: 80%!important;
     }
