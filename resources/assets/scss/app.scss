@@ -88,6 +88,12 @@ $container-max-widths: (
 .wp-block-gallery.home .blocks-gallery-image figure,
 .wp-block-gallery.home .blocks-gallery-item figure { 
     justify-content: center;
+    figure {
+        padding: 0.5rem 1.5rem;
+        img {
+            max-height: 3rem;
+        }
+    }
 }
 
 .w-dm-80 {
