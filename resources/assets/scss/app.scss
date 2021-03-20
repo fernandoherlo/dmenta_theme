@@ -505,7 +505,8 @@ aside {
 
 
 @include media-breakpoint-down(lg) {
-    #primary-menu.show {
+    #primary-menu.navbar-collapse.show,
+    #primary-menu.navbar-collapse.collapsing {
         position: fixed;
         top: 0;
         bottom: 0;
@@ -514,7 +515,7 @@ aside {
         background: $primary;
         z-index: 2000;
         display: flex;
-        justify-content: center;
+        justify-content: center !important;
     }
     aside {
         .background {
