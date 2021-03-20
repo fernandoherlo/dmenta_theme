@@ -80,7 +80,9 @@ $container-max-widths: (
 }
 
 .wp-block-button__link {
-    color: $white;
+    color: $white !important;
+    font-size: 1rem;
+    background-color: $body-color;
 }
 
 .w-dm-80 {
