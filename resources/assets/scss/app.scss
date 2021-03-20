@@ -87,7 +87,8 @@ $container-max-widths: (
 
 .wp-block-gallery.home {
     align-items: center;
-    .blocks-gallery-image figure {
+    .blocks-gallery-grid figure {
+        align-items: center;
         justify-content: center;
         img {
             max-height: 3rem;
