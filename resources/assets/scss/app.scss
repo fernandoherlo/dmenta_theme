@@ -594,7 +594,7 @@ aside {
         text-align: center !important;
         padding-bottom: 2rem !important;
         padding-top: 11rem !important;
-        margin-top: 22rem !important;
+        margin-top: 18rem !important;
         .background {
             background-position-x: 1rem !important;
             background-size: 120% !important;
@@ -602,13 +602,18 @@ aside {
             right: 0rem !important;
         }
     }
+    .category-9 aside .background {
+        top: -21rem!important;
+    }
     .page-id-23 aside .background {
-        right: 4rem !important;
-        top: -31rem !important;
+        right: 5rem !important;
+        top: -33rem !important;
+        background-position-x: 0rem!important;
     }
     .blog aside .background,
     .page-id-241 aside .background {
-        background-size: 70%!important;
+        background-position-x: 2rem!important;
+        background-size: 80%!important;
     }
     footer {
         margin: -1rem -1rem;
