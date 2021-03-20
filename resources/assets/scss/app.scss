@@ -326,7 +326,19 @@ footer.site-footer {
         font-style: italic;
     }
     #secondary-menu {
+        margin: 0;
+        padding: 0;
         text-align: left;
+        list-style: none;
+        li {
+            a {
+                color: $white;
+                &:hover {
+                    color: $white;
+                    text-decoration: underline;
+                }
+            }
+        }
     }
 }
 
