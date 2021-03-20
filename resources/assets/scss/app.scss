@@ -578,9 +578,9 @@ aside {
     }
 }
 @include media-breakpoint-down(sm) {
-    .navbar,
-    main {
-        margin: 0 1rem !important;
+    #app {
+        padding: 1rem !important;
+        padding-top: 0 !important;
     }
     .navbar {
         padding-top: 1rem;
@@ -590,6 +590,7 @@ aside {
         }
     }
     aside {
+        margin: 0 -1rem;
         text-align: center !important;
         padding-bottom: 2rem !important;
         padding-top: 11rem !important;
@@ -602,6 +603,7 @@ aside {
         }
     }
     footer {
+        margin: -1rem -1rem;
         &.site-footer {
             text-align: center;
             #secondary-menu {
