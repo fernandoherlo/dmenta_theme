@@ -9,7 +9,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "POT-Creation-Date: 2020-04-17T21:03:15+00:00\n"
-"PO-Revision-Date: 2021-03-20 13:33+0100\n"
+"PO-Revision-Date: 2021-03-20 13:36+0100\n"
 "X-Generator: Poedit 2.4.2\n"
 "X-Domain: dmenta\n"
 "Last-Translator: \n"
@@ -209,3 +209,7 @@ msgstr ""
 #: template-parts/content.php:40
 msgid "Continue reading<span class=\"screen-reader-text\"> \"%s\"</span>"
 msgstr ""
+
+#: template-parts/content-list.php:78
+msgid "More about"
+msgstr "Más sobre"
