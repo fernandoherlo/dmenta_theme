@@ -207,6 +207,14 @@ add_filter( 'get_the_archive_title', function ($title) {
 });
 
 /**
+* Removes or edits the 'Protected:' part from posts titles
+*/
+add_filter( 'protected_title_format', 'remove_protected_text' );
+function remove_protected_text() {
+  return __('%s');
+}
+
+/**
  * Custom template tags for this theme.
  */
 require get_template_directory() . '/inc/template-tags.php';
