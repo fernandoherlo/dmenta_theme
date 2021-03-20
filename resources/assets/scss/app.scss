@@ -507,6 +507,7 @@ aside {
 @include media-breakpoint-down(lg) {
     #primary-menu.navbar-collapse.show,
     #primary-menu.navbar-collapse.collapsing {
+        text-align: center;
         position: fixed;
         top: 0;
         bottom: 0;
@@ -516,6 +517,15 @@ aside {
         z-index: 2000;
         display: flex;
         justify-content: center !important;
+        height: 100% !important;
+        .nav-link {
+            font-size: 1.7rem;
+            color: $white !important; 
+        }
+        .category-9 &,
+        .page-id-23 & {
+            background: $secondary;
+        }
     }
     aside {
         .background {
