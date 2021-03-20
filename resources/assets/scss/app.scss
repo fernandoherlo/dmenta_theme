@@ -85,6 +85,11 @@ $container-max-widths: (
     background-color: $body-color;
 }
 
+.wp-block-gallery.home .blocks-gallery-image figure,
+.wp-block-gallery.home .blocks-gallery-item figure { 
+    justify-content: center;
+}
+
 .w-dm-80 {
     width: 80%;
 }
