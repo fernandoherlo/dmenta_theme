@@ -89,7 +89,7 @@ a {
 
 @include media-breakpoint-down(md) {
   .w-dm-sm-100 {
-    width: 100%;
+    width: 100% !important;
   }
 }
 
@@ -123,6 +123,9 @@ a {
     }
     .navbar-nav .close {
         display: none;
+        position: fixed;
+        top: 1rem;
+        right: 3rem;
         a {
             color: $white;
             cursor: pointer;
@@ -152,7 +155,7 @@ main {
     .post {
         padding: 2rem 2rem 4rem 3rem;
         border-left: 1px solid $gray-400;
-        margin-left: 5rem;
+        margin-left: 4rem;
         header {
             position: relative;
             &:before {
@@ -591,6 +594,19 @@ aside {
             width: 11rem;
         }
     }
+    .blog,
+    .archive {
+        .post {
+            padding: 1rem 0rem 2rem 2rem;
+            margin-left: 3rem;
+            header:before {
+                left: -2.5rem;
+            }
+            .entry-date {
+                left: -6.5rem;
+            }
+        }
+    }
     aside {
         margin: 0 -1rem;
         text-align: center !important;
@@ -604,7 +620,7 @@ aside {
             right: 0rem !important;
         }
         .bgcol {
-            padding: 0 1rem;
+            padding: 0 2rem;
         }
     }
     .page-id-23 aside {
@@ -614,7 +630,7 @@ aside {
         top: -21rem!important;
     }
     .page-id-23 aside .background {
-        right: 5rem !important;
+        right: 7rem !important;
         top: -33rem !important;
         background-position-x: 0rem!important;
     }
