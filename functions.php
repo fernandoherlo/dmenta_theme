@@ -52,12 +52,10 @@ if ( ! function_exists( 'dmenta_theme_setup' ) ) :
 
         // This theme uses wp_nav_menu() in one location.
         register_nav_menus(
-            array(
-                'menu-1' => esc_html__( 'Primary', 'dmenta_theme' ),
-            ),
-            array(
-                'menu-2' => esc_html__( 'Secondary', 'dmenta_theme' ),
-            )
+          array(
+            'menu-1' => esc_html__( 'Primary', 'dmenta_theme' ),
+            'menu-2' => esc_html__( 'Secondary', 'dmenta_theme' ),
+          )
         );
 
         /**
