@@ -61,7 +61,7 @@ document.addEventListener("DOMContentLoaded", function() {
             myDropdown.hide();
         };
 
-        li.classList.add(close);
+        li.classList.add('close');
         li.appendChild(a);
         ul.appendChild(li);
     }
