@@ -9468,10 +9468,10 @@ aside .social-icons a:not(.post-thumbnail):hover {
     top: -28rem !important;
   }
 
-  footer .site-footer {
+  footer.site-footer {
     text-align: center;
   }
-  footer .site-footer #secondary-menu {
+  footer.site-footer #secondary-menu {
     text-align: center;
   }
 }
