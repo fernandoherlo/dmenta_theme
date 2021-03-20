@@ -79,6 +79,10 @@ $container-max-widths: (
     outline: none !important;
 }
 
+.wp-block-button__link {
+    color: $white;
+}
+
 .w-dm-80 {
     width: 80%;
 }
