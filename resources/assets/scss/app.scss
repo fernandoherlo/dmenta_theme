@@ -79,10 +79,6 @@ $container-max-widths: (
     outline: none !important;
 }
 
-a {
-    overflow-wrap: anywhere;
-}
-
 .w-dm-80 {
     width: 80%;
 }
@@ -592,6 +588,13 @@ aside {
         padding-bottom: 2.6rem;
         .navbar-brand {
             width: 11rem;
+        }
+    }
+    main,
+    aside {
+        a:not(.post-thumbnail) {
+            display: inline;
+            overflow-wrap: anywhere;
         }
     }
     .blog,
