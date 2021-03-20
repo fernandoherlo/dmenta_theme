@@ -50,16 +50,14 @@ document.addEventListener("DOMContentLoaded", function() {
     const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0)
     if ( vw > 991.98) {
     } else {
-        var myDropdown = document.getElementById('primary-menu')
+        var myDropdown = document.getElementById('primary-menu');
 
         var ul = document.getElementById('menu-principal');
         var li = document.createElement('li');
         var a = document.createElement('a');
 
         a.appendChild(document.createTextNode('X'));
-        a.onclick = function(){
-            myDropdown.hide();
-        };
+        a.onclick = () => myDropdown.dropdown('hide');
 
         li.classList.add('close');
         li.appendChild(a);
