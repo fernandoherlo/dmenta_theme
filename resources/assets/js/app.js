@@ -1,5 +1,6 @@
 // import 'bootstrap';
 import { Dropdown } from 'bootstrap';
+import { Collapse } from 'bootstrap';
 import SimpleLightbox from 'simplelightbox';
 
 document.addEventListener("DOMContentLoaded", function() {
@@ -57,7 +58,7 @@ document.addEventListener("DOMContentLoaded", function() {
         var a = document.createElement('a');
 
         a.appendChild(document.createTextNode('X'));
-        a.onclick = () => myDropdown.dropdown('hide');
+        a.onclick = () => myDropdown.collapse('hide');
 
         li.classList.add('close');
         li.appendChild(a);
