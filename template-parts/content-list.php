@@ -25,7 +25,7 @@
             <h3 class="entry-title"><a href="<?php echo esc_url( get_category_link( get_post_meta(get_the_ID(), 'link', true) ) ); ?>" rel="bookmark"><?php echo esc_html( get_the_title( get_post_meta(get_the_ID(), 'title', true) ) ); ?></a></h3>
         <?php
         else:
-            if (DMENTA_POST_LINK) :
+            if (DMENTA_POST_LINK || get_post_meta(get_the_ID(), 'post_link', true)) :
                 the_title( '<h3 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h3>' );
             else:
                 the_title( '<h3 class="entry-title">', '</h3>' );
@@ -73,7 +73,7 @@
                 }
 
                 $categories = get_the_category();
-                if ( ! empty( $categories ) && DMENTA_POST_LINK ) :
+                if ( ! empty( $categories ) && (DMENTA_POST_LINK || get_post_meta(get_the_ID(), 'post_link', true)) ) :
                 ?>
                     <a class="more" href="<?php echo esc_url( get_permalink() ); ?>" rel="bookmark"><?php echo esc_html__( 'More about', 'dmenta_theme' ) . ' ' . esc_html( get_the_title( get_post_meta(get_the_ID(), 'title', true) ) ); ?></a>
                 <?php

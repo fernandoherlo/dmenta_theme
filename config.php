@@ -1,3 +1,3 @@
 <?php
 
-define(DMENTA_POST_LINK, true);
+define(DMENTA_POST_LINK, false);
