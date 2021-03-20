@@ -505,7 +505,7 @@ aside {
 
 
 @include media-breakpoint-down(lg) {
-    #primary-menu {
+    #primary-menu.show {
         position: fixed;
         top: 0;
         bottom: 0;
