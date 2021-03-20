@@ -563,7 +563,7 @@ aside {
     .page-id-23 {
         aside {
             .background {
-                right: 1;
+                right: 1rem;
                 top: -13.29rem;
             }
         }
@@ -601,6 +601,14 @@ aside {
             top: -25rem !important;
             right: 0rem !important;
         }
+    }
+    .page-id-23 aside .background {
+        right: 4rem !important;
+        top: -31rem !important;
+    }
+    .blog aside .background,
+    .page-id-241 aside .background {
+        background-size: 70%!important;
     }
     footer {
         margin: -1rem -1rem;
