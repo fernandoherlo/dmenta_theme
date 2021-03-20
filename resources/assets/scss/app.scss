@@ -110,6 +110,7 @@ $container-max-widths: (
     }
     .navbar-toggler {
         border: 0;
+        margin-right: -1rem;
         &:focus {
             box-shadow: none;
         }
@@ -120,8 +121,8 @@ $container-max-widths: (
     .navbar-nav .close {
         display: none;
         position: fixed;
-        top: 1rem;
-        right: 3rem;
+        top: 0.8rem;
+        right: 1.1rem;
         a {
             color: $white;
             cursor: pointer;
@@ -594,7 +595,15 @@ aside {
     aside {
         a:not(.post-thumbnail) {
             display: inline;
-            overflow-wrap: anywhere;
+            overflow-wrap: break-word;
+            word-wrap: break-word;
+            -ms-word-break: break-all;
+            word-break: break-all;
+            word-break: break-word;
+            -ms-hyphens: auto;
+            -moz-hyphens: auto;
+            -webkit-hyphens: auto;
+            hyphens: auto;
         }
     }
     .blog,
