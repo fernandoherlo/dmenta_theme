@@ -9464,6 +9464,11 @@ aside .social-icons a:not(.post-thumbnail):hover {
   }
 }
 @media (max-width: 575.98px) {
+  .navbar,
+main {
+    margin: 1rem;
+  }
+
   .navbar {
     padding-top: 1rem;
     padding-bottom: 2.6rem;

@@ -578,6 +578,10 @@ aside {
     }
 }
 @include media-breakpoint-down(sm) {
+    .navbar,
+    main {
+        margin: 1rem;
+    }
     .navbar {
         padding-top: 1rem;
         padding-bottom: 2.6rem;
