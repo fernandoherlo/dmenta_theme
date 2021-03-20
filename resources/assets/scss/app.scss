@@ -318,6 +318,7 @@ aside {
 }
 
 footer.site-footer {
+    text-align: right;
     padding-top: 4rem;
     padding-bottom: 4rem;
     background: $primary;
@@ -327,12 +328,13 @@ footer.site-footer {
     #secondary-menu {
         margin: 0;
         padding: 0;
-        text-align: right;
+        text-align: left;
         list-style: none;
         font-size: .875em;
         li {
             a {
                 color: $white;
+                padding: 0;
                 &:hover {
                     color: $white;
                     text-decoration: underline;
