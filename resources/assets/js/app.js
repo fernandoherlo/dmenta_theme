@@ -7,11 +7,12 @@ document.addEventListener("DOMContentLoaded", function() {
     // A wrap
     wrap('main a:not(.post-thumbnail), aside a', '<span class="bkg"></span>', 'link');
 
-    // Init
-    setTimeout(() => { document.querySelector('body').classList.add('loaded'); }, 150);
-
-
+    // Perloading
     if (preloading) {
+        
+        // Init
+        setTimeout(() => { document.querySelector('body').classList.add('loaded'); }, 150);
+
         // Links event
         document.querySelectorAll('#app a').forEach((element) => {
 

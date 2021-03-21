@@ -26,22 +26,21 @@
     </style>
 </head>
 
-<body <?php body_class(); ?>>
-
-<?php wp_body_open(); ?>
-
 <?php
 if (DMENTA_PRELOADING) :
 ?>
-<div id="app">
+<body <?php body_class('trans_app'); ?>>
 <?php
 else :
 ?>
-<div id="app" class="loaded">
+<body <?php body_class('loaded'); ?>>
 <?php
 endif;
 ?>
 
+<?php wp_body_open(); ?>
+
+<div id="app">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
 

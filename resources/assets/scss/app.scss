@@ -491,10 +491,12 @@ aside {
 #app {
     background: $white;
     opacity: 0;
-    transition: all 0.3s ease-in-out 0.2s;
-    transition-delay: 0.01s;
     .loaded & {
         opacity: 1;
+    }
+    .trans_app & {
+        transition: all 0.3s ease-in-out 0.2s;
+        transition-delay: 0.01s;
     }
 }
 
