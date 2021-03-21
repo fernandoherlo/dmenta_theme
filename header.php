@@ -37,7 +37,7 @@ if (DMENTA_PRELOADING) :
 <?php
 else :
 ?>
-<div id="app loaded">
+<div id="app" class="loaded">
 <?php
 endif;
 ?>
