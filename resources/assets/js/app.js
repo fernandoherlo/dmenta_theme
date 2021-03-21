@@ -44,7 +44,9 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Lightbox
     document.querySelectorAll('.wp-block-gallery').forEach((element) => {
-        new SimpleLightbox(element.querySelectorAll('a'), { /* options */ });
+        if (element.querySelectorAll('a')) {
+            new SimpleLightbox(element.querySelectorAll('a'), { /* options */ });
+        }
     });
 
     // Menu
