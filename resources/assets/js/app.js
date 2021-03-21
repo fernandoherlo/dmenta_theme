@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Lightbox
     document.querySelectorAll('.wp-block-gallery').forEach((element) => {
-        if (element.querySelectorAll('a')) {
+        if (element.querySelectorAll('a').length > 0) {
             new SimpleLightbox(element.querySelectorAll('a'), { /* options */ });
         }
     });

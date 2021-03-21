@@ -3084,7 +3084,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }); // Lightbox
 
   document.querySelectorAll('.wp-block-gallery').forEach(function (element) {
-    if (element.querySelectorAll('a')) {
+    if (element.querySelectorAll('a').length > 0) {
       new simplelightbox__WEBPACK_IMPORTED_MODULE_1__.default(element.querySelectorAll('a'), {
         /* options */
       });
