@@ -171,7 +171,7 @@ main {
 .blog,
 .archive {
     .post {
-        padding: 2rem 2rem 4rem 3rem;
+        padding: 2rem 2rem 3rem 3rem;
         border-left: 1px solid $gray-400;
         margin-left: 4rem;
         header {
@@ -186,6 +186,7 @@ main {
             }
             h3 {
                 font-weight: bold;
+                margin-bottom: 0.1rem;
             }
         }
         .entry-date {
@@ -243,7 +244,7 @@ main {
         // Status
         &.format-status {
             padding-top: 1rem;
-            padding-bottom: 3rem;
+            padding-bottom: 2rem;
             padding-left: 1.8rem;
             color: $gray-600;
             header {
@@ -263,7 +264,7 @@ main {
 
         // Link LAB
         &.format-link {
-            padding-bottom: 3rem;
+            padding-bottom: 2rem;
             header {
                 &:before {
                     color: $secondary;
