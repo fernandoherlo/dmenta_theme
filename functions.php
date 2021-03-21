@@ -196,11 +196,6 @@ function dmenta_theme_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'dmenta_theme_scripts' );
 
-// function dmenta_theme_footer() {
-//   wp_enqueue_style( $theme->get('TextDomain') . '-app' , get_template_directory_uri() . '/dist/css/app.css' , array() , $theme->get('Version') , 'all' );
-// }
-// add_action( 'get_footer', 'dmenta_theme_footer' );
-
 /**
  * Title category
  */
