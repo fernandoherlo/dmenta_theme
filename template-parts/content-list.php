@@ -59,7 +59,11 @@
                 the_excerpt();
             endif;
         else:
-            the_content();
+            if( is_tag() ):
+                the_excerpt();
+            else:
+                the_content();
+            endif;
         endif;
         ?>
 
