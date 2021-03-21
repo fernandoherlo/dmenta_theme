@@ -247,7 +247,7 @@ add_filter( 'the_seo_framework_sitemap_additional_urls', function( $custom_urls 
 
   foreach ( $taxonomies as $tax ) {
     // When the taxonomy is disabled or isn't public, don't include it.
-    if ( ! $tsf->is_taxonomy_supported( $tax ) ) continue;
+    // if ( ! $tsf->is_taxonomy_supported( $tax ) ) continue;
 
     $terms = get_terms( $tax );
 
