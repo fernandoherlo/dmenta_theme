@@ -33,8 +33,9 @@
     </footer>
 </div>
 
-<?php wp_footer(); ?>
 
+<script src="https://kit.fontawesome.com/1dc456169a.js" crossorigin="anonymous"></script>
+<?php wp_footer(); ?>
 
 <div class="overlay-loading">
     <span>
