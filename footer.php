@@ -36,7 +36,7 @@
 
 <script src="https://kit.fontawesome.com/1dc456169a.js" crossorigin="anonymous"></script>
 <script>
-    var preloading = <?php echo DMENTA_PRELOADING; ?>;
+    var preloading = <?php echo (DMENTA_PRELOADING) ? 'true' : 'false'; ?>;
 </script>
 <?php wp_footer(); ?>
 
