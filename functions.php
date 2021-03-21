@@ -234,53 +234,6 @@ remove_action( 'wp_head', 'feed_links_extra', 3 );
 remove_action( 'wp_head', 'feed_links', 2 );
 
 /**
-* Add to sitemap
-*/
-add_filter( 'the_seo_framework_sitemap_additional_urls', function( $custom_urls = [] ) {
-
-  // Set the taxonomy types you'd like to include.
-  $taxonomies = [
-    'category',
-  ];
-
-  $tsf = the_seo_framework();
-
-  foreach ( $taxonomies as $tax ) {
-    // When the taxonomy is disabled or isn't public, don't include it.
-    // if ( ! $tsf->is_taxonomy_supported( $tax ) ) continue;
-
-    $terms = get_terms( $tax );
-
-    foreach ( $terms as $term ) {
-      if ( isset( $term->taxonomy, $term->term_id ) ) {
-        if ( the_seo_framework()->is_robots_meta_noindex_set_by_args(
-          [
-            'id'       => $term->term_id,
-            'taxonomy' => $term->taxonomy,
-          ],
-          \The_SEO_Framework\ROBOTS_IGNORE_PROTECTION
-        ) ) continue;
-        
-        // create_canonical_url() escapes.
-        $url = $tsf->create_canonical_url( 
-          [
-            'id'       => $term->term_id,
-            'taxonomy' => $term->taxonomy,
-          ]
-        );
-
-        $custom_urls[ $url ] = [
-          'lastmod'  => null, // difficult to determine.
-          'priority' => null, // This will be deprecated.
-        ];
-      }
-    }
-  }
-
-  return $custom_urls;
-} );
-
-/**
  * Custom template tags for this theme.
  */
 require get_template_directory() . '/inc/template-tags.php';
