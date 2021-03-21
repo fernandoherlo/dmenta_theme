@@ -100,6 +100,9 @@ $container-max-widths: (
         }
     }
 }
+.wp-block-image img {
+    height: auto;
+}
 
 .w-dm-80 {
     width: 80%;
