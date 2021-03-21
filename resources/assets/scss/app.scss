@@ -497,6 +497,16 @@ aside {
             }
         }
     }
+    .blog,
+    .archive {
+        .post {
+            .tags-links {
+                a {
+                    @extend .bg-secondary;
+                }
+            }
+        }
+    }
 }
 
 #app {
