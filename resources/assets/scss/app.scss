@@ -85,14 +85,18 @@ $container-max-widths: (
     background-color: $body-color;
 }
 
-.wp-block-gallery.home {
-    align-items: center;
-    .blocks-gallery-grid figure {
+.wp-block-gallery {
+    margin: 0.5rem 0 0 0;
+    &.home {
+        margin: 0;
         align-items: center;
-        justify-content: center;
-        padding: 0 0.6rem;
-        img {
-            max-height: 3rem;
+        .blocks-gallery-grid figure {
+            align-items: center;
+            justify-content: center;
+            padding: 0 0.6rem;
+            img {
+                max-height: 3rem;
+            }
         }
     }
 }
@@ -313,7 +317,6 @@ main {
             h3 {
                 font-size: 1.5rem;
                 padding-top: 0.2rem;
-                margin-bottom: 1rem;
             }
         }
         .entry-content {
