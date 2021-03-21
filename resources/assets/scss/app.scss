@@ -497,8 +497,8 @@ aside {
             }
         }
     }
-    .blog,
-    .archive {
+    &.blog,
+    &.archive {
         .post {
             .tags-links {
                 a {
