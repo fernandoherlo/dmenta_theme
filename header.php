@@ -21,8 +21,7 @@
 
     <style type="text/css">
         <?php
-            echo get_template_directory_uri() . '/dist/css/app.css';
-            file_get_contents(get_template_directory_uri() . '/dist/css/app.css');
+            echo file_get_contents(get_template_directory_uri() . '/dist/css/base.css');
         ?>
     </style>
 </head>
