@@ -10,37 +10,40 @@ document.addEventListener("DOMContentLoaded", function() {
     // Init
     setTimeout(() => { document.querySelector('body').classList.add('loaded'); }, 150);
 
-    // Links event
-    document.querySelectorAll('#app a').forEach((element) => {
 
-        // If gallery
-        if (element.closest('.wp-block-gallery') === null) {
+    if (preloading) {
+        // Links event
+        document.querySelectorAll('#app a').forEach((element) => {
 
-            // Link
-            element.addEventListener('click', (event) => {
+            // If gallery
+            if (element.closest('.wp-block-gallery') === null) {
 
-                if (element.host == window.location.host) {
+                // Link
+                element.addEventListener('click', (event) => {
 
-                    event.preventDefault();
+                    if (element.host == window.location.host) {
 
-                    if (element.href != window.location.href) {
-                        
-                        // Not loaded
-                        document.querySelector('body').classList.remove('loaded');
+                        event.preventDefault();
 
-                        // Go
-                        setTimeout(() => { window.location.href = element.href }, 50);
-                    }                    
+                        if (element.href != window.location.href) {
+                            
+                            // Not loaded
+                            document.querySelector('body').classList.remove('loaded');
 
-                    return false;
-                } else {
-                    return true;
-                }
+                            // Go
+                            setTimeout(() => { window.location.href = element.href }, 50);
+                        }                    
 
-            }, false);
-        }
+                        return false;
+                    } else {
+                        return true;
+                    }
 
-    });
+                }, false);
+            }
+
+        });
+    }
 
     // Lightbox
     document.querySelectorAll('.wp-block-gallery').forEach((element) => {

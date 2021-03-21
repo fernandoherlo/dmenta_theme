@@ -35,13 +35,22 @@
 
 
 <script src="https://kit.fontawesome.com/1dc456169a.js" crossorigin="anonymous"></script>
+<stript>
+    var preloading = <?php echo DMENTA_PRELOADING; ?>;
+</stript>
 <?php wp_footer(); ?>
 
-<div class="overlay-loading">
-    <span>
-        <img src="<?php echo get_template_directory_uri(); ?>/dist/img/loading.gif" alt="<?php echo esc_html__( 'Loading', 'dmenta_theme' ); ?>">
-    </span>
-</div>
+<?php
+if (DMENTA_PRELOADING) :
+?>
+    <div class="overlay-loading">
+        <span>
+            <img src="<?php echo get_template_directory_uri(); ?>/dist/img/loading.gif" alt="<?php echo esc_html__( 'Loading', 'dmenta_theme' ); ?>">
+        </span>
+    </div>
+<?php
+endif;
+?>
 
 </body>
 </html>

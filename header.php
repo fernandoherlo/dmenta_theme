@@ -30,7 +30,17 @@
 
 <?php wp_body_open(); ?>
 
+<?php
+if (DMENTA_PRELOADING) :
+?>
 <div id="app">
+<?php
+else :
+?>
+<div id="app loaded">
+<?php
+endif;
+?>
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
