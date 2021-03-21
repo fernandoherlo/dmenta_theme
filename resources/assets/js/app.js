@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function() {
     wrap('main a:not(.post-thumbnail), aside a', '<span class="bkg"></span>', 'link');
 
     // Init
-    setTimeout(() => { document.querySelector('body').classList.add('loaded'); }, 300);
+    setTimeout(() => { document.querySelector('body').classList.add('loaded'); }, 250);
 
     // Links event
     document.querySelectorAll('#app a').forEach((element) => {

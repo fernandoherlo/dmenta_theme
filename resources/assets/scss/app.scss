@@ -106,6 +106,9 @@ $container-max-widths: (
     width: 100% !important;
   }
 }
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    letter-spacing: -0.02rem;
+}
 
 // Css
 .navbar {
