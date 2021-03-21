@@ -2,31 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 // Variables
-$primary: #3CE2AD;
-$secondary: #6945ED;
-$warning: #FFEB64;
-$body-color: #3F404D;
-
-$body-bg: $primary;
-
-$font-family-sans-serif: 'Lato', sans-serif;
-
-$grid-breakpoints: (
-  xs: 0,
-  sm: 576px,
-  md: 768px,
-  lg: 992px,
-  xl: 1020px,
-  xxl: 1040px
-);
-
-$container-max-widths: (
-  sm: 540px,
-  md: 720px,
-  lg: 960px,
-  xl: 970px,
-  xxl: 980px
-);
+@import "variables";
 
 // Bootrstrap
 // @import "~bootstrap/scss/bootstrap";
@@ -522,7 +498,7 @@ aside {
     }
 }
 
-
+/*
 .overlay-loading {
     position: fixed;
     top: 0%;
@@ -565,6 +541,7 @@ aside {
         width: auto !important;
     }
 }
+*/
 
 
 @include media-breakpoint-down(lg) {

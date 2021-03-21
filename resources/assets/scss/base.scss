@@ -1,0 +1,45 @@
+// Variable
+@import "variables";
+
+.overlay-loading {
+    position: fixed;
+    top: 0%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    background: $primary;
+    transition: top 0.2s ease-in-out 0.1s, background 0.2s linear;
+
+    span {
+        font-size: 0.7rem;
+        font-style: italic;
+        color: $warning;
+        position: absolute;
+        top:  calc(50% - 20px);
+        left: calc(50% - 20px);
+        text-align: center;
+        width: 40px;
+        height: 40px;
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    .loaded & {
+        top: 105%;
+        background: $primary !important;
+    }
+}
+
+#cookie-law-info-bar {
+    padding: 1rem !important;
+    width: auto !important;
+    height: auto !important;
+    div div {
+        display: inline !important;
+        width: auto !important;
+    }
+}

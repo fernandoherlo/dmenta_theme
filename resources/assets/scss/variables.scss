@@ -1,0 +1,26 @@
+// Variables
+$primary: #3CE2AD;
+$secondary: #6945ED;
+$warning: #FFEB64;
+$body-color: #3F404D;
+
+$body-bg: $primary;
+
+$font-family-sans-serif: 'Lato', sans-serif;
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1020px,
+  xxl: 1040px
+);
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 970px,
+  xxl: 980px
+);
