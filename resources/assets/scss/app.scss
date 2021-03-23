@@ -322,10 +322,14 @@ main {
             margin-left: calc(50% - 50vw);
             padding: 0;
 
-            background: $gray-100;
+            background-color: $gray-100;
             padding: 6rem;
 
             margin-bottom: 0;
+
+            figure {
+                margin-bottom: 0;                
+            }
 
             img {
                 @extend .shadow-lg;
@@ -338,6 +342,9 @@ main {
                 img {
                     box-shadow: none !important;
                 }
+
+                background-image: url(../img/bkg_gb.jpg);
+                background-repeat: repeat-x;
             }
 
         }
