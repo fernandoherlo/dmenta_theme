@@ -333,7 +333,7 @@ main {
             img {
                 @extend .shadow-lg;
             }
-            .pb-5 {
+            &.pb-5 {
                 padding-bottom: 13rem !important;
             }
 
