@@ -330,23 +330,19 @@ main {
             figure {
                 margin-bottom: 0;                
             }
-
             img {
                 @extend .shadow-lg;
             }
 
             &.noshadow {
-
+                background-image: url(../img/bkg_gb.jpg);
+                background-repeat: repeat-x;
+                background-position-y: -100px;
                 padding: 0;
-
                 img {
                     box-shadow: none !important;
                 }
-
-                background-image: url(../img/bkg_gb.jpg);
-                background-repeat: repeat-x;
             }
-
         }
     }
 }
