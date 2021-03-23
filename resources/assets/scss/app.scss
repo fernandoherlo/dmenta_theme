@@ -636,6 +636,16 @@ aside {
             }
         }
     }
+    .single {
+        .post {
+            .wp-block-image.w100 {
+                padding: 4rem;
+                &.noshadow {
+                    background-position-y: -180px;
+                }
+            }
+        }
+    }
 }
 @include media-breakpoint-down(sm) {
     #app {
@@ -709,6 +719,16 @@ aside {
         top: -27rem!important;
         background-position-x: 2rem!important;
         background-size: 80%!important;
+    }
+    .single {
+        .post {
+            .wp-block-image.w100 {
+                padding: 2rem;
+                &.noshadow {
+                    background-position-y: -350px;
+                }
+            }
+        }
     }
     footer {
         margin: -1rem -1rem;
