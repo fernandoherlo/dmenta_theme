@@ -324,8 +324,11 @@ main {
 
             background: $gray-100;
             padding: 6rem;
+
+            margin-bottom: 0;
+            
             img {
-                @extend .shadow;
+                @extend .shadow-lg;
             }
 
         }
