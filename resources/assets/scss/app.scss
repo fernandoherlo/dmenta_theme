@@ -333,6 +333,9 @@ main {
             img {
                 @extend .shadow-lg;
             }
+            .pb-5 {
+                padding-bottom: 13rem !important;
+            }
 
             &.noshadow {
                 background-image: url(../img/bkg_gb.jpg);
@@ -344,6 +347,9 @@ main {
                 }
             }
         }
+    }
+    aside {
+        margin-top: -5rem;
     }
 }
 
@@ -727,7 +733,13 @@ aside {
                 &.noshadow {
                     background-position-y: -350px;
                 }
+                &.pb-5 {
+                    padding-bottom: 23rem!important;
+                }
             }
+        }
+        aside {
+            margin-top: -5rem!important;
         }
     }
     footer {
