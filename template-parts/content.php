@@ -10,6 +10,9 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+
+    <?php
+    if (!get_post_meta(get_the_ID(), 'noh1', true) ) :
     <header class="entry-header">
         <?php
         if ( is_singular() ) :
@@ -18,15 +21,18 @@
             the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
         endif;
 
-        if ( 'post' === get_post_type() ) :
+        /*if ( 'post' === get_post_type() ) :
             ?>
             <div class="entry-meta">
                 <?php
                 dmenta_theme_posted_on();
                 ?>
             </div>
-        <?php endif; ?>
+        <?php endif; */ ?>
     </header>
+    <?php
+    endif;
+    ?>
 
     <div class="entry-content">
         <?php

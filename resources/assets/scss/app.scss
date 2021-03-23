@@ -204,6 +204,14 @@ main {
                 }
             }
         }
+        .wp-block-cover {
+            position: relative;
+            height: 50vh;
+            z-index: 1;
+            // margin-top: -5rem;
+            width: 100vw;
+            margin-left: calc(50% - 50vw);
+        }
     }
 }
 
