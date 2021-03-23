@@ -323,6 +323,10 @@ main {
             padding: 0;
 
             background: $gray-100;
+            padding: 6rem;
+            img {
+                @extend .shadow;
+            }
 
         }
     }
