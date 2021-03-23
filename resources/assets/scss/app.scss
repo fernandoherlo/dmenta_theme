@@ -326,9 +326,18 @@ main {
             padding: 6rem;
 
             margin-bottom: 0;
-            
+
             img {
                 @extend .shadow-lg;
+            }
+
+            &.noshadow {
+
+                padding: 0;
+
+                img {
+                    box-shadow: none !important;
+                }
             }
 
         }
