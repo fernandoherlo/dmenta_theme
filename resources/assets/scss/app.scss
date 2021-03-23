@@ -311,10 +311,19 @@ main {
         .wp-block-cover {
             position: relative;
             height: 50vh;
-            z-index: 1;
-            // margin-top: -5rem;
             width: 100vw;
             margin-left: calc(50% - 50vw);
+            padding: 0;
+        }
+        .wp-block-image.w100 {
+
+            position: relative;
+            width: 100vw;
+            margin-left: calc(50% - 50vw);
+            padding: 0;
+
+            background: $gray-100;
+
         }
     }
 }
@@ -503,6 +512,7 @@ aside {
 #app {
     background: $white;
     opacity: 0;
+    overflow: hidden;
     .loaded & {
         opacity: 1;
     }
